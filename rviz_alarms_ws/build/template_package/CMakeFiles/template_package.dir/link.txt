@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g -shared -Wl,-soname,libtemplate_package.so -o /home/beast/rviz_alarms_ws/devel/lib/libtemplate_package.so CMakeFiles/template_package.dir/src/template_class.cpp.o 
