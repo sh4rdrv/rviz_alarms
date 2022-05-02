@@ -122,10 +122,24 @@ template_gui_package/CMakeFiles/talker.dir/src/hello_gui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/talker.dir/src/hello_gui.cpp.s"
 	cd /home/beast/rviz_alarms_ws/build/template_gui_package && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beast/rviz_alarms_ws/src/template_gui_package/src/hello_gui.cpp -o CMakeFiles/talker.dir/src/hello_gui.cpp.s
 
+template_gui_package/CMakeFiles/talker.dir/src/renderarea.cpp.o: template_gui_package/CMakeFiles/talker.dir/flags.make
+template_gui_package/CMakeFiles/talker.dir/src/renderarea.cpp.o: /home/beast/rviz_alarms_ws/src/template_gui_package/src/renderarea.cpp
+template_gui_package/CMakeFiles/talker.dir/src/renderarea.cpp.o: template_gui_package/CMakeFiles/talker.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beast/rviz_alarms_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object template_gui_package/CMakeFiles/talker.dir/src/renderarea.cpp.o"
+	cd /home/beast/rviz_alarms_ws/build/template_gui_package && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT template_gui_package/CMakeFiles/talker.dir/src/renderarea.cpp.o -MF CMakeFiles/talker.dir/src/renderarea.cpp.o.d -o CMakeFiles/talker.dir/src/renderarea.cpp.o -c /home/beast/rviz_alarms_ws/src/template_gui_package/src/renderarea.cpp
+
+template_gui_package/CMakeFiles/talker.dir/src/renderarea.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/talker.dir/src/renderarea.cpp.i"
+	cd /home/beast/rviz_alarms_ws/build/template_gui_package && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beast/rviz_alarms_ws/src/template_gui_package/src/renderarea.cpp > CMakeFiles/talker.dir/src/renderarea.cpp.i
+
+template_gui_package/CMakeFiles/talker.dir/src/renderarea.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/talker.dir/src/renderarea.cpp.s"
+	cd /home/beast/rviz_alarms_ws/build/template_gui_package && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beast/rviz_alarms_ws/src/template_gui_package/src/renderarea.cpp -o CMakeFiles/talker.dir/src/renderarea.cpp.s
+
 template_gui_package/CMakeFiles/talker.dir/talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o: template_gui_package/CMakeFiles/talker.dir/flags.make
 template_gui_package/CMakeFiles/talker.dir/talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o: template_gui_package/talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp
 template_gui_package/CMakeFiles/talker.dir/talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o: template_gui_package/CMakeFiles/talker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beast/rviz_alarms_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object template_gui_package/CMakeFiles/talker.dir/talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beast/rviz_alarms_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object template_gui_package/CMakeFiles/talker.dir/talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o"
 	cd /home/beast/rviz_alarms_ws/build/template_gui_package && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT template_gui_package/CMakeFiles/talker.dir/talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o -MF CMakeFiles/talker.dir/talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o.d -o CMakeFiles/talker.dir/talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o -c /home/beast/rviz_alarms_ws/build/template_gui_package/talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp
 
 template_gui_package/CMakeFiles/talker.dir/talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.i: cmake_force
@@ -141,6 +155,7 @@ talker_OBJECTS = \
 "CMakeFiles/talker.dir/talker_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/talker.dir/nodes/talker.cpp.o" \
 "CMakeFiles/talker.dir/src/hello_gui.cpp.o" \
+"CMakeFiles/talker.dir/src/renderarea.cpp.o" \
 "CMakeFiles/talker.dir/talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o"
 
 # External object files for target talker
@@ -149,6 +164,7 @@ talker_EXTERNAL_OBJECTS =
 /home/beast/rviz_alarms_ws/devel/lib/template_gui_package/talker: template_gui_package/CMakeFiles/talker.dir/talker_autogen/mocs_compilation.cpp.o
 /home/beast/rviz_alarms_ws/devel/lib/template_gui_package/talker: template_gui_package/CMakeFiles/talker.dir/nodes/talker.cpp.o
 /home/beast/rviz_alarms_ws/devel/lib/template_gui_package/talker: template_gui_package/CMakeFiles/talker.dir/src/hello_gui.cpp.o
+/home/beast/rviz_alarms_ws/devel/lib/template_gui_package/talker: template_gui_package/CMakeFiles/talker.dir/src/renderarea.cpp.o
 /home/beast/rviz_alarms_ws/devel/lib/template_gui_package/talker: template_gui_package/CMakeFiles/talker.dir/talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o
 /home/beast/rviz_alarms_ws/devel/lib/template_gui_package/talker: template_gui_package/CMakeFiles/talker.dir/build.make
 /home/beast/rviz_alarms_ws/devel/lib/template_gui_package/talker: /opt/ros/melodic/lib/libroscpp.so
@@ -174,7 +190,7 @@ talker_EXTERNAL_OBJECTS =
 /home/beast/rviz_alarms_ws/devel/lib/template_gui_package/talker: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.9.5
 /home/beast/rviz_alarms_ws/devel/lib/template_gui_package/talker: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5
 /home/beast/rviz_alarms_ws/devel/lib/template_gui_package/talker: template_gui_package/CMakeFiles/talker.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/beast/rviz_alarms_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable /home/beast/rviz_alarms_ws/devel/lib/template_gui_package/talker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/beast/rviz_alarms_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable /home/beast/rviz_alarms_ws/devel/lib/template_gui_package/talker"
 	cd /home/beast/rviz_alarms_ws/build/template_gui_package && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/talker.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

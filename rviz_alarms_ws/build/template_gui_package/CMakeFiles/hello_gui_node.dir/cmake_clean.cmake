@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/hello_gui_node.dir/nodes/hello_gui_node.cpp.o.d"
   "CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o"
   "CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o.d"
+  "CMakeFiles/hello_gui_node.dir/src/renderarea.cpp.o"
+  "CMakeFiles/hello_gui_node.dir/src/renderarea.cpp.o.d"
   "hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp"
   "ui_hello_gui.h"
 )

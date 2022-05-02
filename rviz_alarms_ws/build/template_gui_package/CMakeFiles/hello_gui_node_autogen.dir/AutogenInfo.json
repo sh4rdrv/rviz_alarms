@@ -77,6 +77,12 @@
 			"Mu",
 			"6PKUJRDHSE/moc_hello_gui.cpp",
 			null
+		],
+		[
+			"/home/beast/rviz_alarms_ws/src/template_gui_package/include/template_gui_package/renderarea.h",
+			"Mu",
+			"6PKUJRDHSE/moc_renderarea.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -153,6 +159,11 @@
 		],
 		[
 			"/home/beast/rviz_alarms_ws/src/template_gui_package/src/hello_gui.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/beast/rviz_alarms_ws/src/template_gui_package/src/renderarea.cpp",
 			"Mu",
 			null
 		]

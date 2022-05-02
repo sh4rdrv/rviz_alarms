@@ -490,6 +490,33 @@ src/hello_gui.cpp.s:
 	cd /home/beast/rviz_alarms_ws/build && $(MAKE) $(MAKESILENT) -f template_gui_package/CMakeFiles/talker.dir/build.make template_gui_package/CMakeFiles/talker.dir/src/hello_gui.cpp.s
 .PHONY : src/hello_gui.cpp.s
 
+src/renderarea.o: src/renderarea.cpp.o
+.PHONY : src/renderarea.o
+
+# target to build an object file
+src/renderarea.cpp.o:
+	cd /home/beast/rviz_alarms_ws/build && $(MAKE) $(MAKESILENT) -f template_gui_package/CMakeFiles/hello_gui_node.dir/build.make template_gui_package/CMakeFiles/hello_gui_node.dir/src/renderarea.cpp.o
+	cd /home/beast/rviz_alarms_ws/build && $(MAKE) $(MAKESILENT) -f template_gui_package/CMakeFiles/talker.dir/build.make template_gui_package/CMakeFiles/talker.dir/src/renderarea.cpp.o
+.PHONY : src/renderarea.cpp.o
+
+src/renderarea.i: src/renderarea.cpp.i
+.PHONY : src/renderarea.i
+
+# target to preprocess a source file
+src/renderarea.cpp.i:
+	cd /home/beast/rviz_alarms_ws/build && $(MAKE) $(MAKESILENT) -f template_gui_package/CMakeFiles/hello_gui_node.dir/build.make template_gui_package/CMakeFiles/hello_gui_node.dir/src/renderarea.cpp.i
+	cd /home/beast/rviz_alarms_ws/build && $(MAKE) $(MAKESILENT) -f template_gui_package/CMakeFiles/talker.dir/build.make template_gui_package/CMakeFiles/talker.dir/src/renderarea.cpp.i
+.PHONY : src/renderarea.cpp.i
+
+src/renderarea.s: src/renderarea.cpp.s
+.PHONY : src/renderarea.s
+
+# target to generate assembly for a file
+src/renderarea.cpp.s:
+	cd /home/beast/rviz_alarms_ws/build && $(MAKE) $(MAKESILENT) -f template_gui_package/CMakeFiles/hello_gui_node.dir/build.make template_gui_package/CMakeFiles/hello_gui_node.dir/src/renderarea.cpp.s
+	cd /home/beast/rviz_alarms_ws/build && $(MAKE) $(MAKESILENT) -f template_gui_package/CMakeFiles/talker.dir/build.make template_gui_package/CMakeFiles/talker.dir/src/renderarea.cpp.s
+.PHONY : src/renderarea.cpp.s
+
 talker_autogen/DCE47BCNNQ/qrc_example_resouce.o: talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o
 .PHONY : talker_autogen/DCE47BCNNQ/qrc_example_resouce.o
 
@@ -580,6 +607,9 @@ help:
 	@echo "... src/hello_gui.o"
 	@echo "... src/hello_gui.i"
 	@echo "... src/hello_gui.s"
+	@echo "... src/renderarea.o"
+	@echo "... src/renderarea.i"
+	@echo "... src/renderarea.s"
 	@echo "... talker_autogen/DCE47BCNNQ/qrc_example_resouce.o"
 	@echo "... talker_autogen/DCE47BCNNQ/qrc_example_resouce.i"
 	@echo "... talker_autogen/DCE47BCNNQ/qrc_example_resouce.s"

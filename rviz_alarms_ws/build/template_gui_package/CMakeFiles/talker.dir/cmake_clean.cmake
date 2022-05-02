@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/talker.dir/nodes/talker.cpp.o.d"
   "CMakeFiles/talker.dir/src/hello_gui.cpp.o"
   "CMakeFiles/talker.dir/src/hello_gui.cpp.o.d"
+  "CMakeFiles/talker.dir/src/renderarea.cpp.o"
+  "CMakeFiles/talker.dir/src/renderarea.cpp.o.d"
   "CMakeFiles/talker.dir/talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o"
   "CMakeFiles/talker.dir/talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o.d"
   "CMakeFiles/talker.dir/talker_autogen/mocs_compilation.cpp.o"

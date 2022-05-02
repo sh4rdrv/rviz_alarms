@@ -122,10 +122,24 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.s: cmake_fo
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.s"
 	cd /home/beast/rviz_alarms_ws/build/template_gui_package && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beast/rviz_alarms_ws/src/template_gui_package/src/hello_gui.cpp -o CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.s
 
+template_gui_package/CMakeFiles/hello_gui_node.dir/src/renderarea.cpp.o: template_gui_package/CMakeFiles/hello_gui_node.dir/flags.make
+template_gui_package/CMakeFiles/hello_gui_node.dir/src/renderarea.cpp.o: /home/beast/rviz_alarms_ws/src/template_gui_package/src/renderarea.cpp
+template_gui_package/CMakeFiles/hello_gui_node.dir/src/renderarea.cpp.o: template_gui_package/CMakeFiles/hello_gui_node.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beast/rviz_alarms_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object template_gui_package/CMakeFiles/hello_gui_node.dir/src/renderarea.cpp.o"
+	cd /home/beast/rviz_alarms_ws/build/template_gui_package && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT template_gui_package/CMakeFiles/hello_gui_node.dir/src/renderarea.cpp.o -MF CMakeFiles/hello_gui_node.dir/src/renderarea.cpp.o.d -o CMakeFiles/hello_gui_node.dir/src/renderarea.cpp.o -c /home/beast/rviz_alarms_ws/src/template_gui_package/src/renderarea.cpp
+
+template_gui_package/CMakeFiles/hello_gui_node.dir/src/renderarea.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello_gui_node.dir/src/renderarea.cpp.i"
+	cd /home/beast/rviz_alarms_ws/build/template_gui_package && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beast/rviz_alarms_ws/src/template_gui_package/src/renderarea.cpp > CMakeFiles/hello_gui_node.dir/src/renderarea.cpp.i
+
+template_gui_package/CMakeFiles/hello_gui_node.dir/src/renderarea.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello_gui_node.dir/src/renderarea.cpp.s"
+	cd /home/beast/rviz_alarms_ws/build/template_gui_package && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beast/rviz_alarms_ws/src/template_gui_package/src/renderarea.cpp -o CMakeFiles/hello_gui_node.dir/src/renderarea.cpp.s
+
 template_gui_package/CMakeFiles/hello_gui_node.dir/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o: template_gui_package/CMakeFiles/hello_gui_node.dir/flags.make
 template_gui_package/CMakeFiles/hello_gui_node.dir/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o: template_gui_package/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp
 template_gui_package/CMakeFiles/hello_gui_node.dir/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o: template_gui_package/CMakeFiles/hello_gui_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beast/rviz_alarms_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object template_gui_package/CMakeFiles/hello_gui_node.dir/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beast/rviz_alarms_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object template_gui_package/CMakeFiles/hello_gui_node.dir/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o"
 	cd /home/beast/rviz_alarms_ws/build/template_gui_package && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT template_gui_package/CMakeFiles/hello_gui_node.dir/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o -MF CMakeFiles/hello_gui_node.dir/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o.d -o CMakeFiles/hello_gui_node.dir/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o -c /home/beast/rviz_alarms_ws/build/template_gui_package/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp
 
 template_gui_package/CMakeFiles/hello_gui_node.dir/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.i: cmake_force
@@ -141,6 +155,7 @@ hello_gui_node_OBJECTS = \
 "CMakeFiles/hello_gui_node.dir/hello_gui_node_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/hello_gui_node.dir/nodes/hello_gui_node.cpp.o" \
 "CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o" \
+"CMakeFiles/hello_gui_node.dir/src/renderarea.cpp.o" \
 "CMakeFiles/hello_gui_node.dir/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o"
 
 # External object files for target hello_gui_node
@@ -149,6 +164,7 @@ hello_gui_node_EXTERNAL_OBJECTS =
 /home/beast/rviz_alarms_ws/devel/lib/template_gui_package/hello_gui_node: template_gui_package/CMakeFiles/hello_gui_node.dir/hello_gui_node_autogen/mocs_compilation.cpp.o
 /home/beast/rviz_alarms_ws/devel/lib/template_gui_package/hello_gui_node: template_gui_package/CMakeFiles/hello_gui_node.dir/nodes/hello_gui_node.cpp.o
 /home/beast/rviz_alarms_ws/devel/lib/template_gui_package/hello_gui_node: template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o
+/home/beast/rviz_alarms_ws/devel/lib/template_gui_package/hello_gui_node: template_gui_package/CMakeFiles/hello_gui_node.dir/src/renderarea.cpp.o
 /home/beast/rviz_alarms_ws/devel/lib/template_gui_package/hello_gui_node: template_gui_package/CMakeFiles/hello_gui_node.dir/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp.o
 /home/beast/rviz_alarms_ws/devel/lib/template_gui_package/hello_gui_node: template_gui_package/CMakeFiles/hello_gui_node.dir/build.make
 /home/beast/rviz_alarms_ws/devel/lib/template_gui_package/hello_gui_node: /opt/ros/melodic/lib/libroscpp.so
@@ -174,7 +190,7 @@ hello_gui_node_EXTERNAL_OBJECTS =
 /home/beast/rviz_alarms_ws/devel/lib/template_gui_package/hello_gui_node: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.9.5
 /home/beast/rviz_alarms_ws/devel/lib/template_gui_package/hello_gui_node: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5
 /home/beast/rviz_alarms_ws/devel/lib/template_gui_package/hello_gui_node: template_gui_package/CMakeFiles/hello_gui_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/beast/rviz_alarms_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable /home/beast/rviz_alarms_ws/devel/lib/template_gui_package/hello_gui_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/beast/rviz_alarms_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable /home/beast/rviz_alarms_ws/devel/lib/template_gui_package/hello_gui_node"
 	cd /home/beast/rviz_alarms_ws/build/template_gui_package && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello_gui_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

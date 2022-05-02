@@ -301,6 +301,51 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/hello_gui_node_autogen/mocs_c
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcombobox.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
+  /usr/include/c++/7/functional \
+  /usr/include/c++/7/bits/std_function.h \
+  /usr/include/c++/7/bits/refwrap.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvalidator.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qregularexpression.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpinBox \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qspinbox.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCheckBox \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcheckbox.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPainter \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintEvent \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
   /opt/ros/melodic/include/ros/ros.h \
   /opt/ros/melodic/include/ros/time.h \
   /opt/ros/melodic/include/ros/platform.h \
@@ -863,7 +908,6 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/hello_gui_node_autogen/mocs_c
   /usr/include/c++/7/bits/unique_ptr.h \
   /usr/include/c++/7/bits/shared_ptr.h \
   /usr/include/c++/7/bits/shared_ptr_base.h \
-  /usr/include/c++/7/bits/refwrap.h \
   /usr/include/c++/7/bits/shared_ptr_atomic.h \
   /usr/include/c++/7/backward/auto_ptr.h \
   /usr/include/boost/checked_delete.hpp \
@@ -881,8 +925,6 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/hello_gui_node_autogen/mocs_c
   /usr/include/boost/smart_ptr/detail/sp_counted_impl.hpp \
   /usr/include/boost/core/addressof.hpp \
   /usr/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp \
-  /usr/include/c++/7/functional \
-  /usr/include/c++/7/bits/std_function.h \
   /usr/include/boost/smart_ptr/detail/sp_convertible.hpp \
   /usr/include/boost/smart_ptr/detail/sp_nullptr_t.hpp \
   /usr/include/boost/smart_ptr/detail/sp_noexcept.hpp \
@@ -1180,7 +1222,15 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/hello_gui_node_autogen/mocs_c
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h \
   /opt/ros/melodic/include/std_msgs/String.h \
-  /opt/ros/melodic/include/ros/message_operations.h
+  /opt/ros/melodic/include/ros/message_operations.h \
+  template_gui_package/hello_gui_node_autogen/6PKUJRDHSE/moc_renderarea.cpp \
+  /home/beast/rviz_alarms_ws/src/template_gui_package/include/template_gui_package/renderarea.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QBrush \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPen \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h
 
 template_gui_package/CMakeFiles/hello_gui_node.dir/nodes/hello_gui_node.cpp.o: /home/beast/rviz_alarms_ws/src/template_gui_package/nodes/hello_gui_node.cpp \
   /usr/include/stdc-predef.h \
@@ -1493,6 +1543,44 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/nodes/hello_gui_node.cpp.o: /
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcombobox.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvalidator.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qregularexpression.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpinBox \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qspinbox.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCheckBox \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcheckbox.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPainter \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintEvent \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
   /opt/ros/melodic/include/ros/ros.h \
   /opt/ros/melodic/include/ros/time.h \
   /opt/ros/melodic/include/ros/platform.h \
@@ -2667,6 +2755,49 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcombobox.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
+  /usr/include/c++/7/functional \
+  /usr/include/c++/7/bits/std_function.h \
+  /usr/include/c++/7/bits/refwrap.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvalidator.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qregularexpression.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpinBox \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qspinbox.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCheckBox \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcheckbox.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPainter \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintEvent \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h \
   /opt/ros/melodic/include/ros/ros.h \
   /opt/ros/melodic/include/ros/time.h \
   /opt/ros/melodic/include/ros/platform.h \
@@ -3229,7 +3360,6 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
   /usr/include/c++/7/bits/unique_ptr.h \
   /usr/include/c++/7/bits/shared_ptr.h \
   /usr/include/c++/7/bits/shared_ptr_base.h \
-  /usr/include/c++/7/bits/refwrap.h \
   /usr/include/c++/7/bits/shared_ptr_atomic.h \
   /usr/include/c++/7/backward/auto_ptr.h \
   /usr/include/boost/checked_delete.hpp \
@@ -3247,8 +3377,6 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
   /usr/include/boost/smart_ptr/detail/sp_counted_impl.hpp \
   /usr/include/boost/core/addressof.hpp \
   /usr/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp \
-  /usr/include/c++/7/functional \
-  /usr/include/c++/7/bits/std_function.h \
   /usr/include/boost/smart_ptr/detail/sp_convertible.hpp \
   /usr/include/boost/smart_ptr/detail/sp_nullptr_t.hpp \
   /usr/include/boost/smart_ptr/detail/sp_noexcept.hpp \
@@ -3550,22 +3678,16 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
   template_gui_package/ui_hello_gui.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAction \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qactiongroup.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qeventloop.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qguiapplication.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qinputmethod.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QButtonGroup \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qbuttongroup.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFormLayout \
@@ -3582,61 +3704,29 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qheaderview.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemview.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractscrollarea.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qitemselectionmodel.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvalidator.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qregularexpression.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpinBox \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qspinbox.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
 
+template_gui_package/CMakeFiles/hello_gui_node.dir/src/renderarea.cpp.o: /home/beast/rviz_alarms_ws/src/template_gui_package/src/renderarea.cpp \
+  /usr/include/stdc-predef.h
+
+
+/home/beast/rviz_alarms_ws/src/template_gui_package/src/renderarea.cpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h:
-
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qregularexpression.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qitemselectionmodel.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractscrollarea.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHeaderView:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qformlayout.h:
 
@@ -3646,19 +3736,13 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h:
-
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qinputmethod.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h:
 
 /home/beast/rviz_alarms_ws/src/template_gui_package/nodes/hello_gui_node.cpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/QBrush:
 
 /opt/ros/melodic/include/ros/message_operations.h:
 
@@ -3748,6 +3832,8 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
 
 /usr/include/boost/preprocessor/repetition/repeat_from_to.hpp:
 
+/usr/include/x86_64-linux-gnu/qt5/QtGui/QPen:
+
 /usr/include/boost/preprocessor/repetition/enum_binary_params.hpp:
 
 /usr/include/boost/range/detail/has_member_size.hpp:
@@ -3808,11 +3894,11 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
 
 /usr/include/boost/iterator/iterator_traits.hpp:
 
+/home/beast/rviz_alarms_ws/src/template_gui_package/include/template_gui_package/renderarea.h:
+
 /usr/include/boost/lexical_cast.hpp:
 
 /opt/ros/melodic/include/ros/subscribe_options.h:
-
-/opt/ros/melodic/include/ros/service_callback_helper.h:
 
 /opt/ros/melodic/include/ros/advertise_options.h:
 
@@ -3904,8 +3990,6 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
 
 /usr/include/boost/config/no_tr1/functional.hpp:
 
-/usr/include/boost/function/detail/prologue.hpp:
-
 /usr/include/boost/preprocessor/slot/slot.hpp:
 
 /usr/include/boost/is_placeholder.hpp:
@@ -3961,12 +4045,6 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
 /usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:
 
 /usr/include/boost/smart_ptr/detail/sp_nullptr_t.hpp:
-
-/usr/include/c++/7/bits/std_function.h:
-
-/usr/include/boost/smart_ptr/detail/spinlock_std_atomic.hpp:
-
-/usr/include/c++/7/functional:
 
 /usr/include/boost/core/addressof.hpp:
 
@@ -4035,12 +4113,6 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
 /usr/include/boost/core/enable_if.hpp:
 
 /usr/include/boost/utility/enable_if.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h:
-
-/usr/include/boost/type_traits/declval.hpp:
 
 /usr/include/c++/7/bits/shared_ptr_base.h:
 
@@ -4172,10 +4244,6 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
 
 /usr/include/boost/mpl/prior.hpp:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h:
-
-/usr/include/boost/mpl/distance_fwd.hpp:
-
 /usr/include/boost/mpl/advance_fwd.hpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h:
@@ -4224,8 +4292,6 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
 
 /usr/include/boost/mpl/vector/aux_/front.hpp:
 
-/usr/include/boost/mpl/vector/vector0.hpp:
-
 /usr/include/boost/mpl/vector/vector10.hpp:
 
 /usr/include/boost/mpl/vector/vector20.hpp:
@@ -4246,55 +4312,145 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
 
 /usr/include/boost/mpl/aux_/push_back_impl.hpp:
 
-/usr/include/boost/mpl/aux_/config/integral.hpp:
+/usr/include/boost/smart_ptr/detail/sp_counted_base.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/environments.h:
+/usr/include/boost/mpl/back_inserter.hpp:
 
-/usr/include/boost/preprocessor/repetition/enum_trailing_params.hpp:
+/usr/include/boost/numeric/conversion/converter_policies.hpp:
+
+/usr/include/boost/mpl/aux_/inserter_algorithm.hpp:
+
+/usr/include/boost/mpl/aux_/reverse_fold_impl.hpp:
+
+/usr/include/boost/mpl/reverse_fold.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/fold_impl.hpp:
+
+/usr/include/boost/mpl/aux_/fold_impl.hpp:
+
+/usr/include/boost/mpl/aux_/O1_size_impl.hpp:
+
+/opt/ros/melodic/include/ros/console_backend.h:
+
+/usr/include/boost/mpl/fold.hpp:
+
+/opt/ros/melodic/include/ros/builtin_message_traits.h:
+
+/usr/include/boost/mpl/remove_if.hpp:
+
+/usr/include/boost/mpl/same_as.hpp:
+
+/usr/include/boost/type_traits/is_same.hpp:
+
+/usr/include/boost/ref.hpp:
+
+/usr/include/boost/mpl/aux_/config/forwarding.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_if_impl.hpp:
+
+/usr/include/boost/mpl/identity.hpp:
+
+/usr/include/boost/mpl/pair.hpp:
+
+/usr/include/boost/mpl/always.hpp:
+
+/usr/include/boost/math/tools/real_cast.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:
+
+/usr/include/boost/mpl/and.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp:
+
+/usr/include/boost/mpl/or.hpp:
+
+/opt/ros/melodic/include/ros/service_server.h:
+
+/usr/include/boost/integer_traits.hpp:
+
+/usr/include/boost/mpl/logical.hpp:
+
+/usr/include/boost/mpl/iter_fold_if.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/apply.hpp:
+
+/usr/include/boost/mpl/less.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/template_arity.hpp:
+
+template_gui_package/ui_hello_gui.h:
+
+/usr/include/boost/mpl/aux_/template_arity.hpp:
+
+/usr/include/boost/mpl/aux_/config/bcc.hpp:
+
+/usr/include/boost/mpl/quote.hpp:
+
+/usr/include/boost/mpl/aux_/full_lambda.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/bind.hpp:
 
 /usr/include/boost/mpl/protect.hpp:
 
-/usr/include/unistd.h:
+/usr/include/boost/mpl/aux_/preprocessed/gcc/bind_fwd.hpp:
 
-/opt/ros/melodic/include/ros/rostime_decl.h:
+/usr/include/boost/mpl/aux_/config/bind.hpp:
 
-/usr/include/boost/container/detail/std_fwd.hpp:
+/usr/include/boost/mpl/bind.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h:
+/usr/include/c++/7/bits/stl_tree.h:
 
-/usr/include/wctype.h:
+/usr/include/boost/predef/platform/mingw.h:
 
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpinBox:
+/opt/ros/melodic/include/ros/service.h:
 
-/usr/include/x86_64-linux-gnu/sys/sysmacros.h:
+/usr/include/boost/numeric/conversion/detail/converter.hpp:
 
-/usr/include/boost/iterator/advance.hpp:
+/usr/include/boost/predef/compiler/pgi.h:
 
-/usr/include/boost/config/platform/linux.hpp:
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h:
 
-/usr/include/c++/7/numeric:
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h:
 
-/usr/include/boost/predef/library/std/dinkumware.h:
+/usr/include/boost/preprocessor/slot/detail/def.hpp:
 
-/usr/include/boost/type_traits/is_scalar.hpp:
+/usr/include/c++/7/cstddef:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+/usr/include/boost/smart_ptr/bad_weak_ptr.hpp:
 
-/usr/include/boost/predef/os/hpux.h:
+/usr/include/boost/predef/architecture/x86/32.h:
 
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+/usr/include/boost/type_traits/is_integral.hpp:
 
-/usr/include/c++/7/debug/debug.h:
+/usr/include/boost/smart_ptr/detail/spinlock_std_atomic.hpp:
 
-/opt/ros/melodic/include/ros/ros.h:
+/usr/include/c++/7/functional:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QButtonGroup:
+/usr/include/boost/preprocessor/arithmetic/dec.hpp:
 
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qrgb.h:
+/usr/include/boost/mpl/aux_/arity_spec.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h:
+
+/usr/include/boost/predef/compiler/metrowerks.h:
+
+/usr/include/boost/predef/version.h:
+
+/usr/include/boost/mpl/distance_fwd.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h:
+
+/usr/include/boost/smart_ptr/shared_array.hpp:
+
+/usr/include/boost/predef/library/std/roguewave.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel:
+
+/usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h:
 
 /usr/include/boost/mpl/begin_end.hpp:
 
@@ -4312,9 +4468,27 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h:
 
+/usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap:
+
 /usr/include/boost/mpl/vector/aux_/at.hpp:
 
 /usr/include/c++/7/cwchar:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qnumeric.h:
+
+/usr/include/boost/mpl/comparison.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/7/bits/c++locale.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QButtonGroup:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qrgb.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/opt/ros/melodic/include/ros/ros.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h:
 
 /usr/include/boost/shared_array.hpp:
 
@@ -4350,31 +4524,23 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
 
 /usr/include/c++/7/istream:
 
-/usr/include/x86_64-linux-gnu/bits/confname.h:
-
 /usr/include/boost/numeric/conversion/detail/meta.hpp:
 
 /usr/include/boost/type_traits/is_base_and_derived.hpp:
 
 /usr/include/boost/mpl/apply_fwd.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
-
-/usr/include/boost/preprocessor/punctuation/comma_if.hpp:
-
-/usr/include/boost/preprocessor/iterate.hpp:
-
-/usr/include/boost/config/stdlib/libstdcpp3.hpp:
-
-/opt/ros/melodic/include/ros/transport_hints.h:
-
-/usr/include/boost/mpl/aux_/config/has_apply.hpp:
-
 /usr/include/c++/7/bits/vector.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap-16.h:
 
 /usr/include/strings.h:
+
+/usr/include/boost/mpl/bind_fwd.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h:
+
+/usr/include/boost/predef/os/ios.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h:
 
@@ -4390,9 +4556,13 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
 
 /usr/include/c++/7/math.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h:
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+/usr/include/boost/preprocessor/punctuation/comma_if.hpp:
 
 /usr/include/boost/detail/no_exceptions_support.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h:
 
@@ -4400,7 +4570,23 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
 
 /usr/include/linux/limits.h:
 
+/usr/include/boost/type_traits/declval.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h:
+
+/usr/include/boost/mpl/aux_/na.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/c++/7/numeric:
+
+/usr/include/boost/iterator/advance.hpp:
+
+/usr/include/boost/config/platform/linux.hpp:
+
+/usr/include/boost/predef/library/std/dinkumware.h:
 
 /opt/ros/melodic/include/std_msgs/String.h:
 
@@ -4408,9 +4594,11 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qhashfunctions.h:
 
-/usr/include/c++/7/bits/basic_string.h:
-
 /usr/include/c++/7/bits/ostream.tcc:
+
+/usr/include/boost/function/detail/prologue.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h:
 
@@ -4446,6 +4634,10 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
 
 /usr/include/c++/7/array:
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h:
+
 /usr/include/boost/predef/architecture/arm.h:
 
 /usr/include/c++/7/bits/functional_hash.h:
@@ -4476,17 +4668,17 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
 
 /usr/include/stdio.h:
 
+/usr/include/boost/mpl/aux_/preprocessed/gcc/quote.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qvalidator.h:
+
+/usr/include/c++/7/sstream:
+
 /usr/include/boost/numeric/conversion/detail/sign_mixture.hpp:
 
 /usr/include/boost/core/demangle.hpp:
 
 /usr/include/boost/mpl/find_if.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h:
-
-/usr/include/c++/7/climits:
-
-/usr/include/c++/7/ext/string_conversions.h:
 
 /usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_long_long.hpp:
 
@@ -4504,12 +4696,6 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
 
 /usr/include/boost/predef/detail/os_detected.h:
 
-/usr/include/c++/7/cmath:
-
-/usr/include/boost/predef/hardware/simd/x86_amd/versions.h:
-
-/usr/include/boost/mpl/aux_/config/static_constant.hpp:
-
 /usr/include/boost/numeric/conversion/converter.hpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject_impl.h:
@@ -4521,8 +4707,6 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
 /usr/include/pthread.h:
 
 /usr/include/c++/7/bits/basic_ios.h:
-
-/usr/include/boost/math/special_functions/round.hpp:
 
 /usr/include/c++/7/bits/cxxabi_init_exception.h:
 
@@ -4542,35 +4726,11 @@ template_gui_package/CMakeFiles/hello_gui_node.dir/src/hello_gui.cpp.o: /home/be
 
 /usr/include/boost/preprocessor/facilities/identity.hpp:
 
-/usr/include/boost/config/user.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h:
-
-/usr/include/boost/range/size_type.hpp:
-
-/usr/include/boost/type_traits/is_abstract.hpp:
-
-/usr/include/c++/7/cstdio:
-
-/usr/include/boost/predef/os/os400.h:
-
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
-/home/beast/rviz_alarms_ws/src/template_gui_package/include/template_gui_package/hello_gui.h:
-
-/usr/include/boost/numeric/conversion/numeric_cast_traits.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qtgui-config.h:
-
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/include/c++/7/bits/concept_check.h:
 
 /usr/include/boost/mpl/aux_/lambda_spec.hpp:
-
-template_gui_package/ui_hello_gui.h:
-
-/usr/include/boost/mpl/aux_/template_arity.hpp:
 
 /usr/include/c++/7/bits/locale_facets.tcc:
 
@@ -4578,7 +4738,17 @@ template_gui_package/ui_hello_gui.h:
 
 /usr/include/c++/7/bits/stl_algo.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qregion.h:
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcompilerdetection.h:
+
+/usr/include/boost/smart_ptr/allocate_shared_array.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qhash.h:
+
+/usr/include/boost/predef/compiler/gcc_xml.h:
 
 /opt/ros/melodic/include/ros/node_handle.h:
 
@@ -4598,6 +4768,8 @@ template_gui_package/ui_hello_gui.h:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
+/usr/include/c++/7/debug/debug.h:
+
 /usr/include/boost/type_traits/is_enum.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
@@ -4608,7 +4780,7 @@ template_gui_package/ui_hello_gui.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+/usr/include/x86_64-linux-gnu/qt5/QtGui/QPainter:
 
 /usr/include/boost/version.hpp:
 
@@ -4620,17 +4792,23 @@ template_gui_package/ui_hello_gui.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h:
 
-/usr/include/boost/mpl/list/aux_/push_back.hpp:
+/opt/ros/melodic/include/ros/common.h:
 
-/opt/ros/melodic/include/ros/exception.h:
+/usr/include/boost/type_traits/intrinsics.hpp:
 
-/usr/include/c++/7/utility:
+/usr/include/boost/mpl/aux_/iter_fold_if_impl.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h:
+
+/usr/include/x86_64-linux-gnu/c++/7/bits/gthr-default.h:
+
+/opt/ros/melodic/include/ros/service_callback_helper.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h:
 
 /usr/include/boost/lexical_cast/bad_lexical_cast.hpp:
 
 /usr/include/boost/predef/os/qnxnto.h:
-
-/usr/include/boost/mpl/always.hpp:
 
 /usr/include/boost/range/distance.hpp:
 
@@ -4640,39 +4818,15 @@ template_gui_package/ui_hello_gui.h:
 
 /usr/include/boost/predef/architecture/parisc.h:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/apply.hpp:
-
 /usr/include/boost/bind/bind_cc.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/c++/7/bits/move.h:
 
-/usr/include/boost/config/compiler/gcc.hpp:
-
-/usr/include/boost/preprocessor/control/iif.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qcompilerdetection.h:
-
-/usr/include/boost/smart_ptr/allocate_shared_array.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qhash.h:
-
-/usr/include/boost/predef/compiler/gcc_xml.h:
-
 /usr/include/c++/7/new:
 
 /usr/include/c++/7/bits/stl_iterator_base_types.h:
-
-/usr/include/boost/config/detail/select_stdlib_config.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h:
-
-/usr/include/boost/config/detail/posix_features.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qline.h:
 
 /usr/include/c++/7/tuple:
 
@@ -4694,17 +4848,7 @@ template_gui_package/ui_hello_gui.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h:
-
-/usr/include/c++/7/bits/stl_relops.h:
-
-/usr/include/boost/predef/architecture/mips.h:
-
-/usr/include/boost/config/detail/select_compiler_config.hpp:
-
-/usr/include/boost/type_traits/has_trivial_copy.hpp:
-
-/usr/include/boost/mpl/list/aux_/O1_size.hpp:
+/usr/include/c++/7/bits/std_function.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h:
 
@@ -4752,6 +4896,10 @@ template_gui_package/ui_hello_gui.h:
 
 /usr/include/c++/7/bits/cpp_type_traits.h:
 
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qregion.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h:
+
 /usr/include/c++/7/bits/predefined_ops.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
@@ -4778,6 +4926,10 @@ template_gui_package/ui_hello_gui.h:
 
 /usr/include/boost/predef/platform/windows_runtime.h:
 
+/usr/include/boost/mpl/aux_/preprocessed/gcc/full_lambda.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h:
 
 /usr/include/boost/get_pointer.hpp:
@@ -4786,9 +4938,19 @@ template_gui_package/ui_hello_gui.h:
 
 /usr/include/boost/preprocessor/control/while.hpp:
 
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qregularexpression.h:
+
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
 /usr/include/c++/7/ext/new_allocator.h:
+
+/usr/include/c++/7/bits/stl_relops.h:
+
+/usr/include/boost/predef/architecture/mips.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h:
+
+/usr/include/math.h:
 
 /usr/include/c++/7/bits/functexcept.h:
 
@@ -4808,7 +4970,7 @@ template_gui_package/hello_gui_node_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h:
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h:
 
@@ -4817,8 +4979,6 @@ template_gui_package/hello_gui_node_autogen/mocs_compilation.cpp:
 /usr/include/c++/7/bits/ptr_traits.h:
 
 /usr/include/boost/predef/library/std/msl.h:
-
-/usr/include/c++/7/bits/stl_tree.h:
 
 /usr/include/boost/range/detail/common.hpp:
 
@@ -4830,7 +4990,7 @@ template_gui_package/hello_gui_node_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
-/usr/include/boost/mpl/same_as.hpp:
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h:
 
 /usr/include/c++/7/iterator:
 
@@ -4838,21 +4998,11 @@ template_gui_package/hello_gui_node_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/usr/include/boost/mpl/pop_front_fwd.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/boost/core/checked_delete.hpp:
-
-/usr/include/boost/mpl/vector/aux_/empty.hpp:
-
-/usr/include/boost/predef/compiler/intel.h:
-
-/usr/include/boost/preprocessor/list/fold_left.hpp:
 
 /usr/include/boost/type_traits/add_const.hpp:
 
@@ -4861,6 +5011,14 @@ template_gui_package/hello_gui_node_autogen/mocs_compilation.cpp:
 /usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_common.hpp:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/home/beast/rviz_alarms_ws/src/template_gui_package/include/template_gui_package/hello_gui.h:
+
+/usr/include/boost/numeric/conversion/numeric_cast_traits.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qtgui-config.h:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
 /opt/ros/melodic/include/ros/exceptions.h:
 
@@ -4880,6 +5038,14 @@ template_gui_package/hello_gui_node_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
+/usr/include/boost/container/detail/std_fwd.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h:
+
+/usr/include/wctype.h:
+
+/opt/ros/melodic/include/ros/rostime_decl.h:
+
 /usr/include/boost/math/special_functions/detail/round_fwd.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
@@ -4898,31 +5064,17 @@ template_gui_package/hello_gui_node_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/c++/7/bits/gthr.h:
 
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h:
+
 /usr/include/boost/type_traits/has_plus.hpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h:
-
-/usr/include/boost/preprocessor/slot/detail/def.hpp:
-
-/usr/include/c++/7/cstddef:
-
-/usr/include/boost/smart_ptr/bad_weak_ptr.hpp:
-
-/usr/include/boost/predef/architecture/x86/32.h:
-
-/usr/include/boost/type_traits/is_integral.hpp:
-
-/usr/include/c++/7/iostream:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h:
 
 /usr/include/boost/mpl/has_xxx.hpp:
 
 /usr/include/boost/preprocessor/list/reverse.hpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qiterator.h:
-
-/usr/include/boost/mpl/reverse_fold.hpp:
 
 /usr/include/c++/7/initializer_list:
 
@@ -4956,6 +5108,12 @@ template_gui_package/hello_gui_node_autogen/6PKUJRDHSE/moc_hello_gui.cpp:
 
 /usr/include/boost/mpl/list/aux_/item.hpp:
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qheaderview.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
 /usr/include/boost/preprocessor/facilities/overload.hpp:
 
 /usr/include/boost/utility/base_from_member.hpp:
@@ -4977,8 +5135,6 @@ template_gui_package/hello_gui_node_autogen/6PKUJRDHSE/moc_hello_gui.cpp:
 /usr/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/boost/mpl/identity.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
 
@@ -5012,13 +5168,9 @@ template_gui_package/hello_gui_node_autogen/6PKUJRDHSE/moc_hello_gui.cpp:
 
 /usr/include/c++/7/bits/char_traits.h:
 
-/usr/include/boost/mpl/aux_/reverse_fold_impl.hpp:
-
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h:
 
 /usr/include/c++/7/bits/std_abs.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h:
 
@@ -5050,13 +5202,11 @@ template_gui_package/hello_gui_node_autogen/6PKUJRDHSE/moc_hello_gui.cpp:
 
 /usr/include/boost/predef/library/std/libcomo.h:
 
-/usr/include/boost/mpl/quote.hpp:
-
 /usr/include/boost/detail/sp_typeinfo.hpp:
 
 /usr/include/ctype.h:
 
-/usr/include/math.h:
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcombobox.h:
 
 /usr/include/c++/7/bits/exception_ptr.h:
 
@@ -5076,6 +5226,12 @@ template_gui_package/hello_gui_node_autogen/6PKUJRDHSE/moc_hello_gui.cpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h:
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpinBox:
+
+/usr/include/x86_64-linux-gnu/sys/sysmacros.h:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
 /usr/include/c++/7/bits/alloc_traits.h:
 
 /usr/include/boost/predef/os/android.h:
@@ -5088,13 +5244,7 @@ template_gui_package/hello_gui_node_autogen/6PKUJRDHSE/moc_hello_gui.cpp:
 
 /usr/include/c++/7/bits/memoryfwd.h:
 
-/opt/ros/melodic/include/ros/duration.h:
-
-/usr/include/boost/mpl/aux_/has_size.hpp:
-
 /usr/include/x86_64-linux-gnu/c++/7/bits/atomic_word.h:
-
-/usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h:
 
 /usr/include/boost/mpl/vector/aux_/iterator.hpp:
 
@@ -5104,13 +5254,7 @@ template_gui_package/hello_gui_node_autogen/6PKUJRDHSE/moc_hello_gui.cpp:
 
 /usr/include/boost/predef/hardware/simd/x86.h:
 
-/usr/include/boost/range/begin.hpp:
-
-/usr/include/boost/config/detail/select_platform_config.hpp:
-
-/usr/include/c++/7/bits/uniform_int_dist.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h:
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h:
 
@@ -5123,6 +5267,12 @@ template_gui_package/hello_gui_node_autogen/6PKUJRDHSE/moc_hello_gui.cpp:
 /usr/include/boost/type_traits/add_reference.hpp:
 
 /usr/include/boost/mpl/aux_/find_if_pred.hpp:
+
+/usr/include/c++/7/utility:
+
+/usr/include/boost/mpl/list/aux_/push_back.hpp:
+
+/opt/ros/melodic/include/ros/exception.h:
 
 /usr/include/c++/7/string:
 
@@ -5144,11 +5294,11 @@ template_gui_package/hello_gui_node_autogen/6PKUJRDHSE/moc_hello_gui.cpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qheaderview.h:
+/usr/include/c++/7/bits/basic_string.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qline.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h:
+/usr/include/boost/config/detail/posix_features.hpp:
 
 /usr/include/boost/predef/architecture/m68k.h:
 
@@ -5184,20 +5334,6 @@ template_gui_package/hello_gui_node_autogen/6PKUJRDHSE/moc_hello_gui.cpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobalstatic.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qnumeric.h:
-
-/usr/include/boost/mpl/comparison.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/7/bits/c++locale.h:
-
-/usr/include/boost/mpl/at.hpp:
-
-/usr/include/boost/config.hpp:
-
-/usr/include/boost/predef/hardware/simd/x86/versions.h:
-
-/usr/include/c++/7/bits/stl_pair.h:
-
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h:
 
 /usr/include/boost/type_traits/has_minus_assign.hpp:
@@ -5206,7 +5342,19 @@ template_gui_package/hello_gui_node_autogen/6PKUJRDHSE/moc_hello_gui.cpp:
 
 /usr/include/boost/predef/hardware/simd/ppc/versions.h:
 
-/opt/ros/melodic/include/ros/platform.h:
+/usr/include/boost/mpl/pop_front_fwd.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/boost/core/checked_delete.hpp:
+
+/usr/include/boost/mpl/vector/aux_/empty.hpp:
+
+/usr/include/boost/predef/compiler/intel.h:
+
+/usr/include/boost/preprocessor/list/fold_left.hpp:
 
 /usr/include/boost/smart_ptr/detail/sp_convertible.hpp:
 
@@ -5256,6 +5404,12 @@ template_gui_package/hello_gui_node_autogen/6PKUJRDHSE/moc_hello_gui.cpp:
 
 /usr/include/boost/preprocessor/facilities/expand.hpp:
 
+/usr/include/c++/7/bits/stl_pair.h:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/reverse_fold_impl.hpp:
+
+/opt/ros/melodic/include/ros/macros.h:
+
 /usr/include/c++/7/bits/allocator.h:
 
 /usr/include/boost/move/detail/meta_utils_core.hpp:
@@ -5265,6 +5419,8 @@ template_gui_package/hello_gui_node_autogen/6PKUJRDHSE/moc_hello_gui.cpp:
 /usr/include/boost/preprocessor/list/detail/fold_left.hpp:
 
 /usr/include/boost/preprocessor/enum_params.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCheckBox:
 
 /usr/include/c++/7/ios:
 
@@ -5282,6 +5438,18 @@ template_gui_package/hello_gui_node_autogen/6PKUJRDHSE/moc_hello_gui.cpp:
 
 /usr/include/c++/7/bits/locale_facets.h:
 
+/usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h:
+
+/usr/include/boost/config/user.hpp:
+
+/usr/include/boost/range/size_type.hpp:
+
+/usr/include/boost/type_traits/is_abstract.hpp:
+
+/usr/include/c++/7/cstdio:
+
+/usr/include/boost/predef/os/os400.h:
+
 /usr/include/c++/7/clocale:
 
 /usr/include/c++/7/backward/binders.h:
@@ -5291,6 +5459,102 @@ template_gui_package/hello_gui_node_autogen/6PKUJRDHSE/moc_hello_gui.cpp:
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qgenericatomic.h:
 
 /usr/include/c++/7/bits/range_access.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h:
+
+/usr/include/c++/7/iostream:
+
+/usr/include/boost/mpl/vector/vector0.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h:
+
+template_gui_package/hello_gui_node_autogen/6PKUJRDHSE/moc_renderarea.cpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/QColor:
+
+/usr/include/assert.h:
+
+/opt/ros/melodic/include/ros/platform.h:
+
+/usr/include/c++/7/cmath:
+
+/usr/include/boost/predef/hardware/simd/x86_amd/versions.h:
+
+/usr/include/boost/mpl/aux_/config/static_constant.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/usr/include/boost/type_traits/is_scalar.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+
+/usr/include/boost/predef/os/hpux.h:
+
+/usr/include/boost/mpl/aux_/has_size.hpp:
+
+/opt/ros/melodic/include/ros/duration.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h:
+
+/usr/include/c++/7/ext/string_conversions.h:
+
+/usr/include/c++/7/climits:
+
+/usr/include/boost/math/special_functions/round.hpp:
+
+/usr/include/boost/mpl/at.hpp:
+
+/usr/include/boost/config.hpp:
+
+/usr/include/boost/predef/hardware/simd/x86/versions.h:
+
+/usr/include/boost/config/detail/select_compiler_config.hpp:
+
+/usr/include/boost/type_traits/has_trivial_copy.hpp:
+
+/usr/include/boost/mpl/list/aux_/O1_size.hpp:
+
+/usr/include/boost/config/compiler/gcc.hpp:
+
+/usr/include/boost/preprocessor/control/iif.hpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h:
+
+/usr/include/boost/config/detail/select_stdlib_config.hpp:
+
+/usr/include/boost/preprocessor/iterate.hpp:
+
+/usr/include/boost/config/stdlib/libstdcpp3.hpp:
+
+/opt/ros/melodic/include/ros/transport_hints.h:
+
+/usr/include/boost/mpl/aux_/config/has_apply.hpp:
+
+/usr/include/unistd.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/boost/preprocessor/repetition/enum_trailing_params.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/boost/range/begin.hpp:
+
+/usr/include/c++/7/bits/uniform_int_dist.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h:
+
+/usr/include/boost/config/detail/select_platform_config.hpp:
+
+/usr/include/boost/mpl/aux_/config/integral.hpp:
 
 /usr/include/boost/predef.h:
 
@@ -5376,8 +5640,6 @@ template_gui_package/hello_gui_node_autogen/6PKUJRDHSE/moc_hello_gui.cpp:
 
 /usr/include/boost/predef/compiler/diab.h:
 
-/usr/include/boost/mpl/pair.hpp:
-
 /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/syslimits.h:
 
 /usr/include/boost/predef/compiler/gcc.h:
@@ -5398,15 +5660,9 @@ template_gui_package/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/advance_backward.hpp:
 
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h:
+
 /usr/include/boost/predef/compiler/palm.h:
-
-/opt/ros/melodic/include/ros/service.h:
-
-/usr/include/boost/numeric/conversion/detail/converter.hpp:
-
-/usr/include/boost/predef/compiler/pgi.h:
-
-/usr/include/boost/mpl/aux_/O1_size_impl.hpp:
 
 /usr/include/boost/predef/compiler/sgi_mipspro.h:
 
@@ -5415,10 +5671,6 @@ template_gui_package/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/boost/predef/compiler/visualc.h:
-
-/usr/include/boost/mpl/aux_/config/bind.hpp:
-
-/usr/include/boost/mpl/or.hpp:
 
 /usr/include/boost/lexical_cast/detail/widest_char.hpp:
 
@@ -5446,8 +5698,6 @@ template_gui_package/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 
 /usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:
 
-/usr/include/assert.h:
-
 /usr/include/boost/predef/library/c/gnu.h:
 
 /usr/include/boost/predef/library/c/uc.h:
@@ -5460,19 +5710,9 @@ template_gui_package/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 
 /usr/include/boost/predef/library/std/modena.h:
 
-/usr/include/boost/smart_ptr/shared_array.hpp:
-
-/usr/include/boost/predef/library/std/roguewave.h:
-
-/usr/include/boost/smart_ptr/detail/sp_counted_base.hpp:
-
-/usr/include/boost/mpl/back_inserter.hpp:
-
 /usr/include/boost/predef/library/std/sgi.h:
 
 /usr/include/boost/predef/library/std/vacpp.h:
-
-/usr/include/boost/mpl/aux_/fold_impl.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
@@ -5538,8 +5778,6 @@ template_gui_package/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 
 /usr/include/boost/predef/other/endian.h:
 
-/usr/include/boost/predef/platform/mingw.h:
-
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/c++/7/bits/sstream.tcc:
@@ -5556,8 +5794,6 @@ template_gui_package/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 
 /usr/include/boost/predef/hardware/simd.h:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_if_impl.hpp:
-
 /usr/include/boost/mpl/vector/aux_/preprocessed/typeof_based/vector20.hpp:
 
 /usr/include/boost/mpl/list/aux_/begin_end.hpp:
@@ -5565,10 +5801,6 @@ template_gui_package/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 /usr/include/boost/predef/hardware/simd/arm/versions.h:
 
 /usr/include/boost/predef/hardware/simd/ppc.h:
-
-/usr/include/boost/predef/compiler/metrowerks.h:
-
-/usr/include/boost/predef/version.h:
 
 /opt/ros/melodic/include/ros/steady_timer.h:
 
@@ -5586,8 +5818,6 @@ template_gui_package/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 
 /usr/include/boost/type_traits/integral_constant.hpp:
 
-/usr/include/boost/mpl/and.hpp:
-
 /usr/lib/gcc/x86_64-linux-gnu/7/include/float.h:
 
 /usr/include/boost/math/tools/user.hpp:
@@ -5602,19 +5832,25 @@ template_gui_package/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 
 /usr/include/libintl.h:
 
-/opt/ros/melodic/include/ros/console_backend.h:
-
-/usr/include/boost/mpl/fold.hpp:
-
 /usr/include/boost/predef/compiler/ekopath.h:
 
 /usr/include/c++/7/bits/codecvt.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintEvent:
 
 /usr/include/c++/7/bits/locale_conv.h:
 
 /usr/include/boost/preprocessor/tuple/rem.hpp:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/bind.hpp:
+/usr/include/boost/type_traits/is_array.hpp:
+
+/usr/include/boost/mpl/O1_size.hpp:
+
+/usr/include/c++/7/bits/unique_ptr.h:
+
+/usr/include/boost/mpl/list/aux_/tag.hpp:
+
+/usr/include/c++/7/bits/quoted_string.h:
 
 /usr/include/boost/preprocessor/empty.hpp:
 
@@ -5625,8 +5861,6 @@ template_gui_package/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 /usr/include/boost/mpl/list.hpp:
 
 /usr/include/boost/mpl/limits/list.hpp:
-
-/usr/include/boost/mpl/aux_/na.hpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h:
 
@@ -5654,6 +5888,8 @@ template_gui_package/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 
 /usr/include/boost/mpl/aux_/config/intel.hpp:
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcheckbox.h:
+
 /usr/include/boost/mpl/aux_/config/ctps.hpp:
 
 /usr/include/boost/mpl/aux_/config/gcc.hpp:
@@ -5679,8 +5915,6 @@ template_gui_package/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 /usr/include/boost/preprocessor/config/config.hpp:
 
 /usr/include/boost/mpl/aux_/nttp_decl.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/fold_impl.hpp:
 
 /usr/include/boost/mpl/aux_/yes_no.hpp:
 
@@ -5738,8 +5972,6 @@ template_gui_package/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 
 /usr/include/boost/preprocessor/variadic/elem.hpp:
 
-/usr/include/boost/mpl/iter_fold_if.hpp:
-
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qspinbox.h:
 
 /usr/include/boost/predef/os/bsd/open.h:
@@ -5749,10 +5981,6 @@ template_gui_package/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 /usr/include/boost/mpl/list/aux_/front.hpp:
 
 /usr/include/boost/mpl/int_fwd.hpp:
-
-/opt/ros/melodic/include/ros/builtin_message_traits.h:
-
-/usr/include/boost/mpl/remove_if.hpp:
 
 /usr/include/boost/predef/library/std.h:
 
@@ -5784,6 +6012,8 @@ template_gui_package/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 
 /usr/include/boost/preprocessor/punctuation/comma.hpp:
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox:
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h:
 
 /usr/include/boost/preprocessor/repeat.hpp:
@@ -5807,14 +6037,6 @@ template_gui_package/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 /usr/include/boost/concept_check.hpp:
 
 /usr/include/boost/preprocessor/arithmetic/add.hpp:
-
-/usr/include/boost/preprocessor/arithmetic/dec.hpp:
-
-/usr/include/c++/7/bits/quoted_string.h:
-
-/usr/include/boost/mpl/list/aux_/tag.hpp:
-
-/usr/include/boost/mpl/aux_/arity_spec.hpp:
 
 /usr/include/boost/preprocessor/list/adt.hpp:
 
@@ -5887,8 +6109,6 @@ template_gui_package/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 /usr/include/boost/mpl/iterator_tags.hpp:
 
 /usr/include/boost/mpl/aux_/config/arrays.hpp:
-
-/usr/include/boost/mpl/bind.hpp:
 
 /usr/include/boost/range/iterator.hpp:
 
@@ -5983,71 +6203,3 @@ template_gui_package/hello_gui_node_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 /usr/include/boost/predef/architecture/z.h:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h:
-
-/usr/include/boost/predef/os/ios.h:
-
-/usr/include/boost/mpl/bind_fwd.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/bind_fwd.hpp:
-
-/usr/include/boost/mpl/aux_/full_lambda.hpp:
-
-/usr/include/boost/mpl/aux_/config/bcc.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qvalidator.h:
-
-/usr/include/c++/7/sstream:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/quote.hpp:
-
-/usr/include/boost/mpl/less.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/template_arity.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/full_lambda.hpp:
-
-/opt/ros/melodic/include/ros/service_server.h:
-
-/usr/include/boost/integer_traits.hpp:
-
-/usr/include/boost/mpl/logical.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp:
-
-/usr/include/boost/math/tools/real_cast.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h:
-
-/opt/ros/melodic/include/ros/common.h:
-
-/usr/include/boost/type_traits/intrinsics.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/7/bits/gthr-default.h:
-
-/usr/include/boost/mpl/aux_/iter_fold_if_impl.hpp:
-
-/usr/include/boost/ref.hpp:
-
-/usr/include/boost/mpl/aux_/config/forwarding.hpp:
-
-/usr/include/boost/type_traits/is_same.hpp:
-
-/usr/include/boost/type_traits/is_array.hpp:
-
-/usr/include/c++/7/bits/unique_ptr.h:
-
-/usr/include/boost/mpl/O1_size.hpp:
-
-/opt/ros/melodic/include/ros/macros.h:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/reverse_fold_impl.hpp:
-
-/usr/include/boost/numeric/conversion/converter_policies.hpp:
-
-/usr/include/boost/mpl/aux_/inserter_algorithm.hpp:
