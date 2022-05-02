@@ -27,11 +27,11 @@ QT_BEGIN_NAMESPACE
 class Ui_HelloGui
 {
 public:
-    QWidget *widget;
+    QWidget *layoutWidget;
     QFormLayout *formLayout;
     QLabel *chatter_lbl;
     QLabel *chatter;
-    QWidget *widget1;
+    QWidget *layoutWidget1;
     QHBoxLayout *horizontalLayout;
     QPushButton *hi_button;
     QSpinBox *spinBox;
@@ -39,6 +39,7 @@ public:
     QWidget *horizontalLayoutWidget;
     QHBoxLayout *horizontalLayout_3;
     QSlider *horizontalSlider;
+    QWidget *widget;
 
     void setupUi(QWidget *HelloGui)
     {
@@ -46,28 +47,29 @@ public:
             HelloGui->setObjectName(QStringLiteral("HelloGui"));
         HelloGui->setWindowModality(Qt::NonModal);
         HelloGui->resize(682, 526);
-        widget = new QWidget(HelloGui);
-        widget->setObjectName(QStringLiteral("widget"));
-        formLayout = new QFormLayout(widget);
+        layoutWidget = new QWidget(HelloGui);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(0, 0, 71, 17));
+        formLayout = new QFormLayout(layoutWidget);
         formLayout->setObjectName(QStringLiteral("formLayout"));
         formLayout->setContentsMargins(0, 0, 0, 0);
-        chatter_lbl = new QLabel(widget);
+        chatter_lbl = new QLabel(layoutWidget);
         chatter_lbl->setObjectName(QStringLiteral("chatter_lbl"));
 
         formLayout->setWidget(0, QFormLayout::LabelRole, chatter_lbl);
 
-        chatter = new QLabel(widget);
+        chatter = new QLabel(layoutWidget);
         chatter->setObjectName(QStringLiteral("chatter"));
 
         formLayout->setWidget(0, QFormLayout::FieldRole, chatter);
 
-        widget1 = new QWidget(HelloGui);
-        widget1->setObjectName(QStringLiteral("widget1"));
-        widget1->setGeometry(QRect(200, 60, 135, 26));
-        horizontalLayout = new QHBoxLayout(widget1);
+        layoutWidget1 = new QWidget(HelloGui);
+        layoutWidget1->setObjectName(QStringLiteral("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(200, 60, 135, 26));
+        horizontalLayout = new QHBoxLayout(layoutWidget1);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        hi_button = new QPushButton(widget1);
+        hi_button = new QPushButton(layoutWidget1);
         hi_button->setObjectName(QStringLiteral("hi_button"));
 
         horizontalLayout->addWidget(hi_button);
@@ -80,7 +82,7 @@ public:
         hi_num->setGeometry(QRect(430, 60, 47, 24));
         horizontalLayoutWidget = new QWidget(HelloGui);
         horizontalLayoutWidget->setObjectName(QStringLiteral("horizontalLayoutWidget"));
-        horizontalLayoutWidget->setGeometry(QRect(100, 310, 160, 80));
+        horizontalLayoutWidget->setGeometry(QRect(100, 380, 160, 80));
         horizontalLayout_3 = new QHBoxLayout(horizontalLayoutWidget);
         horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
         horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
@@ -90,6 +92,10 @@ public:
 
         horizontalLayout_3->addWidget(horizontalSlider);
 
+        widget = new QWidget(HelloGui);
+        widget->setObjectName(QStringLiteral("widget"));
+        widget->setGeometry(QRect(400, 230, 120, 80));
+        widget->setAutoFillBackground(true);
 
         retranslateUi(HelloGui);
         QObject::connect(horizontalSlider, SIGNAL(valueChanged(int)), spinBox, SLOT(setValue(int)));

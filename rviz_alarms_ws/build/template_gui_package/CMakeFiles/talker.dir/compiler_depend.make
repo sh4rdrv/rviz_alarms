@@ -1093,10 +1093,8 @@ template_gui_package/CMakeFiles/talker.dir/nodes/talker.cpp.o: /home/beast/rviz_
 
 template_gui_package/CMakeFiles/talker.dir/src/hello_gui.cpp.o: /home/beast/rviz_alarms_ws/src/template_gui_package/src/hello_gui.cpp \
   /usr/include/stdc-predef.h \
-  /home/beast/rviz_alarms_ws/src/template_gui_package/include/template_gui_package/hello_gui.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPalette \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h \
   /usr/include/c++/7/type_traits \
@@ -1209,50 +1207,49 @@ template_gui_package/CMakeFiles/talker.dir/src/hello_gui.cpp.o: /home/beast/rviz
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qnumeric.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qtgui-config.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qnamespace.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs_impl.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgb.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qiterator.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h \
   /usr/include/string.h \
   /usr/include/strings.h \
-  /usr/include/c++/7/stdlib.h \
-  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h \
-  /usr/include/c++/7/string \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qhashfunctions.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qpair.h \
+  /usr/include/c++/7/numeric \
+  /usr/include/c++/7/bits/stl_numeric.h \
+  /usr/include/c++/7/iterator \
+  /usr/include/c++/7/ostream \
+  /usr/include/c++/7/ios \
+  /usr/include/c++/7/iosfwd \
   /usr/include/c++/7/bits/stringfwd.h \
-  /usr/include/c++/7/bits/char_traits.h \
   /usr/include/c++/7/bits/postypes.h \
   /usr/include/c++/7/cwchar \
   /usr/include/wchar.h \
+  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/c++/7/bits/char_traits.h \
   /usr/include/c++/7/cstdint \
-  /usr/include/c++/7/bits/allocator.h \
-  /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h \
-  /usr/include/c++/7/ext/new_allocator.h \
   /usr/include/c++/7/bits/localefwd.h \
   /usr/include/x86_64-linux-gnu/c++/7/bits/c++locale.h \
   /usr/include/c++/7/clocale \
   /usr/include/locale.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
-  /usr/include/c++/7/iosfwd \
   /usr/include/c++/7/cctype \
   /usr/include/ctype.h \
-  /usr/include/c++/7/bits/ostream_insert.h \
-  /usr/include/c++/7/bits/cxxabi_forced.h \
-  /usr/include/c++/7/bits/stl_function.h \
-  /usr/include/c++/7/backward/binders.h \
-  /usr/include/c++/7/bits/range_access.h \
-  /usr/include/c++/7/bits/basic_string.h \
+  /usr/include/c++/7/bits/ios_base.h \
   /usr/include/c++/7/ext/atomicity.h \
   /usr/include/x86_64-linux-gnu/c++/7/bits/gthr.h \
   /usr/include/x86_64-linux-gnu/c++/7/bits/gthr-default.h \
@@ -1267,6 +1264,17 @@ template_gui_package/CMakeFiles/talker.dir/src/hello_gui.cpp.o: /home/beast/rviz
   /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/c++/7/bits/atomic_word.h \
+  /usr/include/c++/7/bits/locale_classes.h \
+  /usr/include/c++/7/string \
+  /usr/include/c++/7/bits/allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h \
+  /usr/include/c++/7/ext/new_allocator.h \
+  /usr/include/c++/7/bits/ostream_insert.h \
+  /usr/include/c++/7/bits/cxxabi_forced.h \
+  /usr/include/c++/7/bits/stl_function.h \
+  /usr/include/c++/7/backward/binders.h \
+  /usr/include/c++/7/bits/range_access.h \
+  /usr/include/c++/7/bits/basic_string.h \
   /usr/include/c++/7/ext/string_conversions.h \
   /usr/include/c++/7/cstdio \
   /usr/include/stdio.h \
@@ -1283,11 +1291,6 @@ template_gui_package/CMakeFiles/talker.dir/src/hello_gui.cpp.o: /home/beast/rviz
   /usr/include/asm-generic/errno-base.h \
   /usr/include/c++/7/bits/functional_hash.h \
   /usr/include/c++/7/bits/basic_string.tcc \
-  /usr/include/c++/7/iterator \
-  /usr/include/c++/7/ostream \
-  /usr/include/c++/7/ios \
-  /usr/include/c++/7/bits/ios_base.h \
-  /usr/include/c++/7/bits/locale_classes.h \
   /usr/include/c++/7/bits/locale_classes.tcc \
   /usr/include/c++/7/system_error \
   /usr/include/x86_64-linux-gnu/c++/7/bits/error_constants.h \
@@ -1308,18 +1311,12 @@ template_gui_package/CMakeFiles/talker.dir/src/hello_gui.cpp.o: /home/beast/rviz
   /usr/include/c++/7/istream \
   /usr/include/c++/7/bits/istream.tcc \
   /usr/include/c++/7/bits/stream_iterator.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qiterator.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qhashfunctions.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qpair.h \
-  /usr/include/c++/7/numeric \
-  /usr/include/c++/7/bits/stl_numeric.h \
   /usr/include/c++/7/list \
   /usr/include/c++/7/bits/stl_list.h \
   /usr/include/c++/7/bits/allocated_ptr.h \
   /usr/include/c++/7/ext/aligned_buffer.h \
   /usr/include/c++/7/bits/list.tcc \
+  /usr/include/c++/7/stdlib.h \
   /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/syslimits.h \
   /usr/include/limits.h \
@@ -1330,18 +1327,32 @@ template_gui_package/CMakeFiles/talker.dir/src/hello_gui.cpp.o: /home/beast/rviz
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearraylist.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qregexp.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgba64.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h \
   /usr/include/c++/7/vector \
   /usr/include/c++/7/bits/stl_uninitialized.h \
   /usr/include/c++/7/bits/stl_vector.h \
   /usr/include/c++/7/bits/stl_bvector.h \
   /usr/include/c++/7/bits/vector.tcc \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpolygon.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qregion.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qiodevice.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h \
   /usr/include/c++/7/map \
   /usr/include/c++/7/bits/stl_tree.h \
   /usr/include/c++/7/bits/stl_map.h \
@@ -1355,32 +1366,23 @@ template_gui_package/CMakeFiles/talker.dir/src/hello_gui.cpp.o: /home/beast/rviz
   /usr/include/c++/7/ratio \
   /usr/include/c++/7/ctime \
   /usr/include/c++/7/bits/parse_numbers.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgb.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgba64.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpolygon.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/qregion.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qiodevice.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qline.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixelformat.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qhash.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h \
+  /home/beast/rviz_alarms_ws/src/template_gui_package/include/template_gui_package/hello_gui.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontmetrics.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h \
@@ -1430,6 +1432,8 @@ template_gui_package/CMakeFiles/talker.dir/src/hello_gui.cpp.o: /home/beast/rviz
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
   /opt/ros/melodic/include/ros/ros.h \
   /opt/ros/melodic/include/ros/time.h \
   /opt/ros/melodic/include/ros/platform.h \
@@ -2340,8 +2344,9 @@ template_gui_package/CMakeFiles/talker.dir/src/hello_gui.cpp.o: /home/beast/rviz
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSlider \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpinBox \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
 
 template_gui_package/CMakeFiles/talker.dir/src/renderarea.cpp.o: /home/beast/rviz_alarms_ws/src/template_gui_package/src/renderarea.cpp \
@@ -3568,18 +3573,8 @@ template_gui_package/CMakeFiles/talker.dir/talker_autogen/mocs_compilation.cpp.o
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h \
   /opt/ros/melodic/include/std_msgs/String.h \
-  /opt/ros/melodic/include/ros/message_operations.h \
-  template_gui_package/talker_autogen/6PKUJRDHSE/moc_renderarea.cpp \
-  /home/beast/rviz_alarms_ws/src/template_gui_package/include/template_gui_package/renderarea.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/QBrush \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPen \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h
+  /opt/ros/melodic/include/ros/message_operations.h
 
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/QBrush:
 
 template_gui_package/talker_autogen/6PKUJRDHSE/moc_hello_gui.cpp:
 
@@ -3588,8 +3583,6 @@ template_gui_package/talker_autogen/mocs_compilation.cpp:
 template_gui_package/talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 
 /home/beast/rviz_alarms_ws/src/template_gui_package/src/renderarea.cpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton:
 
@@ -3659,35 +3652,15 @@ template_gui_package/talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h:
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:
+
+/home/beast/rviz_alarms_ws/src/template_gui_package/include/template_gui_package/hello_gui.h:
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qshareddata.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qiodevice.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qregion.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qpolygon.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QButtonGroup:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qrgb.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h:
 
 /usr/include/c++/7/bits/parse_numbers.h:
 
@@ -3697,7 +3670,25 @@ template_gui_package/talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h:
 
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qiodevice.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qregion.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qmargins.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qpolygon.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h:
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qregexp.h:
 
@@ -3705,15 +3696,17 @@ template_gui_package/talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qpair.h:
 
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h:
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qiterator.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h:
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QButtonGroup:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h:
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qrgb.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h:
 
@@ -3747,9 +3740,11 @@ template_gui_package/talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h:
 
-/home/beast/rviz_alarms_ws/src/template_gui_package/include/template_gui_package/hello_gui.h:
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/QPalette:
 
 /opt/ros/melodic/include/ros/message_operations.h:
 
@@ -3849,8 +3844,6 @@ template_gui_package/talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 
 /usr/include/boost/preprocessor/repetition/repeat_from_to.hpp:
 
-/usr/include/x86_64-linux-gnu/qt5/QtGui/QPen:
-
 /usr/include/boost/preprocessor/repetition/enum_binary_params.hpp:
 
 /usr/include/boost/range/detail/has_member_size.hpp:
@@ -3922,8 +3915,6 @@ template_gui_package/talker_autogen/DCE47BCNNQ/qrc_example_resouce.cpp:
 /usr/include/boost/iterator/interoperable.hpp:
 
 /usr/include/boost/iterator/iterator_traits.hpp:
-
-/home/beast/rviz_alarms_ws/src/template_gui_package/include/template_gui_package/renderarea.h:
 
 /usr/include/boost/lexical_cast.hpp:
 
@@ -5147,8 +5138,6 @@ template_gui_package/ui_hello_gui.h:
 
 /usr/include/c++/7/bits/range_access.h:
 
-template_gui_package/talker_autogen/6PKUJRDHSE/moc_renderarea.cpp:
-
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject_impl.h:
 
 /usr/include/boost/numeric/conversion/converter.hpp:
@@ -5629,6 +5618,8 @@ template_gui_package/talker_autogen/6PKUJRDHSE/moc_renderarea.cpp:
 
 /usr/include/boost/mpl/list/aux_/tag.hpp:
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSlider:
+
 /usr/include/boost/mpl/aux_/arity_spec.hpp:
 
 /usr/include/boost/preprocessor/list/adt.hpp:
@@ -5854,8 +5845,6 @@ template_gui_package/talker_autogen/6PKUJRDHSE/moc_renderarea.cpp:
 /usr/include/boost/mpl/bind_fwd.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/bind_fwd.hpp:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap:
 
 /usr/include/c++/7/cwchar:
 
