@@ -519,7 +519,7 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
   lidar_10_right_rect.setBottom(55);
   lidar_10_right_rect.setRight(366); 
 
-  if(alarm_status[0] == true){
+  if(alarm_status[0] == false){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_1_right_rect);
   }
@@ -528,7 +528,7 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
     painter.drawRect(lidar_1_right_rect);
   }
 
-  if(alarm_status[1] == true){
+  if(alarm_status[1] == false){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_2_right_rect);
   }
@@ -537,7 +537,7 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
     painter.drawRect(lidar_2_right_rect);
   }
 
-  if(alarm_status[2] == true){
+  if(alarm_status[2] == false){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_3_right_rect);
   }
@@ -546,7 +546,7 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
     painter.drawRect(lidar_3_right_rect);
   }
 
-  if(alarm_status[3] == true){
+  if(alarm_status[3] == false){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_4_right_rect);
   }
@@ -555,7 +555,7 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
     painter.drawRect(lidar_4_right_rect);
   }
 
-  if(alarm_status[4] == true){
+  if(alarm_status[4] == false){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_5_right_rect);
   }
@@ -564,7 +564,7 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
     painter.drawRect(lidar_5_right_rect);
   }
 
-  if(alarm_status[5] == true){
+  if(alarm_status[5] == false){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_6_right_rect);
   }
@@ -573,7 +573,7 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
     painter.drawRect(lidar_6_right_rect);
   }
 
-  if(alarm_status[6] == true){
+  if(alarm_status[6] == false){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_7_right_rect);
   }
@@ -582,7 +582,7 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
     painter.drawRect(lidar_7_right_rect);
   }
 
-  if(alarm_status[7] == true){
+  if(alarm_status[7] == false){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_8_right_rect);
   }
@@ -591,7 +591,7 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
     painter.drawRect(lidar_8_right_rect);
   }
 
-  if(alarm_status[8] == true){
+  if(alarm_status[8] == false){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_9_right_rect);
   }
@@ -600,7 +600,7 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
     painter.drawRect(lidar_9_right_rect);
   }
 
-  if(alarm_status[9] == true){
+  if(alarm_status[9] == false){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_10_right_rect);
   }
@@ -765,8 +765,18 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
 
   //Message Box
   textlabel->setFrameStyle(QFrame::Panel | QFrame::Sunken);
-  // if(sub_flag == true){
-    textlabel->setText("Radars in fault");
+  textlabel->setWordWrap(true);
+  if(alarm_status[0] == false){ textlabel->setText("Left Lidar 1 down"); }
+  if(alarm_status[1] == false){ textlabel->setText("Left Lidar 2 down"); }
+  if(alarm_status[2] == false){ textlabel->setText("Left Lidar 3 down"); }
+  if(alarm_status[3] == false){ textlabel->setText("Left Lidar 4 down"); }
+  if(alarm_status[4] == false){ textlabel->setText("Left Lidar 5 down"); }
+  if(alarm_status[5] == false){ textlabel->setText("Left Lidar 6 down"); }
+  if(alarm_status[6] == false){ textlabel->setText("Left Lidar 7 down"); }
+  if(alarm_status[7] == false){ textlabel->setText("Left Lidar 8 down"); }
+  if(alarm_status[8] == false){ textlabel->setText("Left Lidar 9 down"); }
+  if(alarm_status[9] == false){ textlabel->setText("Left Lidar 10 down"); }
+
   // }
   // else if(sub_flag == false){
   //   textlabel->setText("Lidars non responsive");
