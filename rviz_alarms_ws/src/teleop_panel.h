@@ -39,6 +39,8 @@
 
 # include <rviz/panel.h>
 #include "std_msgs/Bool.h"
+#include "rviz_plugin_tutorials/alarm.h"
+
 
 #endif
 
@@ -69,7 +71,8 @@ protected Q_SLOTS:
 
 protected:
 
-  bool sub_flag;
+  // bool sub_flag;
+  bool alarm_status[10];
   QVBoxLayout* layout = new QVBoxLayout;
   QVBoxLayout* bottom_layout = new QVBoxLayout;
   QLabel *textlabel = new QLabel();
@@ -83,7 +86,7 @@ protected:
 
   ros::NodeHandle nh_;
 
-  void callbackAlarms(const std_msgs::Bool::ConstPtr& msg);
+  void callbackAlarms(const rviz_plugin_tutorials::alarm::ConstPtr& msg);
 
 };
 

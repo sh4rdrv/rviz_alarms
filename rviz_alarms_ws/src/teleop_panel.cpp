@@ -51,11 +51,14 @@
 
 #include "teleop_panel.h"
 #include "std_msgs/Bool.h"
+#include "rviz_plugin_tutorials/alarm.h"
+
 
 namespace rviz_plugin_tutorials
 {
 
-extern bool sub_flag;
+// extern bool sub_flag;
+extern bool alarm_status[10];
 
 QLabel *textlabel;
 
@@ -214,11 +217,16 @@ void TeleopPanel::updateTopic()
   alarms_sub = nh_.subscribe("/ros_alarms_topic", 1, &TeleopPanel::callbackAlarms,this);
 }
 
-void TeleopPanel::callbackAlarms(const std_msgs::Bool::ConstPtr& msg)
+// void TeleopPanel::callbackAlarms(const std_msgs::Bool::ConstPtr& msg)
+void TeleopPanel::callbackAlarms(const rviz_plugin_tutorials::alarm::ConstPtr& msg)
 {
-  std_msgs::Bool send_data = *msg;
-  sub_flag = msg->data;
-  ROS_INFO("%d", sub_flag);
+  rviz_plugin_tutorials::alarm send_data = *msg;
+  // sub_flag = msg->data;
+  for(int i=0;i<10;i++){
+    alarm_status[i] = msg->data[i];
+  }
+  
+  // ROS_INFO("%d", alarm_status);
   ros_alarms_pub.publish(send_data);
 }
 
@@ -266,11 +274,36 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
   lidar_4_left_rect.setRight(205);
 
   lidar_5_left_rect.setTop(10);
-  lidar_5_left_rect.setLeft(160);
+  lidar_5_left_rect.setLeft(212);
   lidar_5_left_rect.setBottom(30);
-  lidar_5_left_rect.setRight(180);  
+  lidar_5_left_rect.setRight(232); 
 
-  if(sub_flag == true){
+  lidar_6_left_rect.setTop(10);
+  lidar_6_left_rect.setLeft(238);
+  lidar_6_left_rect.setBottom(30);
+  lidar_6_left_rect.setRight(258);  
+
+  lidar_7_left_rect.setTop(10);
+  lidar_7_left_rect.setLeft(265);
+  lidar_7_left_rect.setBottom(30);
+  lidar_7_left_rect.setRight(285); 
+
+  lidar_8_left_rect.setTop(10);
+  lidar_8_left_rect.setLeft(292);
+  lidar_8_left_rect.setBottom(30);
+  lidar_8_left_rect.setRight(312); 
+
+  lidar_9_left_rect.setTop(10);
+  lidar_9_left_rect.setLeft(319);
+  lidar_9_left_rect.setBottom(30);
+  lidar_9_left_rect.setRight(339); 
+
+  lidar_10_left_rect.setTop(10);
+  lidar_10_left_rect.setLeft(346);
+  lidar_10_left_rect.setBottom(30);
+  lidar_10_left_rect.setRight(366); 
+
+  if(alarm_status[0] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_1_left_rect);
   }
@@ -279,7 +312,7 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
     painter.drawRect(lidar_1_left_rect);
   }
 
-  if(sub_flag == false){
+  if(alarm_status[1] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_2_left_rect);
   }
@@ -288,61 +321,81 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
     painter.drawRect(lidar_2_left_rect);
   }
 
+  if(alarm_status[2] == true){
+    painter.setBrush(comms_ok);
+    painter.drawRect(lidar_3_left_rect);
+  }
+  else {
+    painter.setBrush(comms_bad);
+    painter.drawRect(lidar_3_left_rect);
+  }
 
-  // if(sub_flag == true){
-  //   lidar_painter.setRenderHint(QPainter::Antialiasing, true);  //Message box init
-  //   lidar_painter.setPen(QPen(Qt::black, 1, Qt::SolidLine, Qt::RoundCap));
-  //   lidar_painter.setBrush(QBrush(Qt::green, Qt::SolidPattern));
-  //   // lidar_painter.drawRect(108, 10, 20, 20);
-  //   // lidar_painter.drawRect(lidar_1_left_rect);
-  //   // lidar_painter.drawRect(135, 10, 20, 20);
-  //   // lidar_painter.drawRect(160, 10, 20, 20);
-  //   lidar_painter.drawRect(185, 10, 20, 20);
-  //   lidar_painter.drawRect(212, 10, 20, 20);
-  //   lidar_painter.drawRect(238, 10, 20, 20);
-  //   lidar_painter.drawRect(265, 10, 20, 20);
-  //   lidar_painter.drawRect(292, 10, 20, 20);
-  //   lidar_painter.drawRect(319, 10, 20, 20);
-  //   lidar_painter.drawRect(346, 10, 20, 20);
+  if(alarm_status[3] == true){
+    painter.setBrush(comms_ok);
+    painter.drawRect(lidar_4_left_rect);
+  }
+  else {
+    painter.setBrush(comms_bad);
+    painter.drawRect(lidar_4_left_rect);
+  }
 
+  if(alarm_status[4] == true){
+    painter.setBrush(comms_ok);
+    painter.drawRect(lidar_5_left_rect);
+  }
+  else {
+    painter.setBrush(comms_bad);
+    painter.drawRect(lidar_5_left_rect);
+  }
 
-  // }
-  // else if(sub_flag == false){
-  //   lidar_painter.setRenderHint(QPainter::Antialiasing, true);
-  //   lidar_painter.setPen(QPen(Qt::black, 1, Qt::SolidLine, Qt::RoundCap));
-  //   lidar_painter.setBrush(QBrush(Qt::yellow, Qt::SolidPattern));
-  //   // lidar_painter.drawRect(108, 10, 20, 20);
-  //   lidar_painter.drawRect(135, 10, 20, 20);
-  //   lidar_painter.drawRect(160, 10, 20, 20);
-  //   lidar_painter.drawRect(185, 10, 20, 20);
-  //   lidar_painter.drawRect(212, 10, 20, 20);
-  //   lidar_painter.drawRect(238, 10, 20, 20);
-  //   lidar_painter.drawRect(265, 10, 20, 20);
-  //   lidar_painter.drawRect(292, 10, 20, 20);
-  //   lidar_painter.drawRect(319, 10, 20, 20);
-  //   lidar_painter.drawRect(346, 10, 20, 20);
+  if(alarm_status[5] == true){
+    painter.setBrush(comms_ok);
+    painter.drawRect(lidar_6_left_rect);
+  }
+  else {
+    painter.setBrush(comms_bad);
+    painter.drawRect(lidar_6_left_rect);
+  }
 
-  // } 
-  // else{
-  //   lidar_painter.setRenderHint(QPainter::Antialiasing, true);
-  //   lidar_painter.setPen(QPen(Qt::black, 1, Qt::SolidLine, Qt::RoundCap));
-  //   lidar_painter.setBrush(QBrush(Qt::gray, Qt::SolidPattern));
-  //   // lidar_painter.drawRect(108, 10, 20, 20);
-  //   lidar_painter.drawRect(135, 10, 20, 20);
-  //   lidar_painter.drawRect(160, 10, 20, 20);
-  //   lidar_painter.drawRect(185, 10, 20, 20);
-  //   lidar_painter.drawRect(212, 10, 20, 20);
-  //   lidar_painter.drawRect(238, 10, 20, 20);
-  //   lidar_painter.drawRect(265, 10, 20, 20);
-  //   lidar_painter.drawRect(292, 10, 20, 20);
-  //   lidar_painter.drawRect(319, 10, 20, 20);
-  //   lidar_painter.drawRect(346, 10, 20, 20);
-  // }
+  if(alarm_status[6] == true){
+    painter.setBrush(comms_ok);
+    painter.drawRect(lidar_7_left_rect);
+  }
+  else {
+    painter.setBrush(comms_bad);
+    painter.drawRect(lidar_7_left_rect);
+  }
 
+  if(alarm_status[7] == true){
+    painter.setBrush(comms_ok);
+    painter.drawRect(lidar_8_left_rect);
+  }
+  else {
+    painter.setBrush(comms_bad);
+    painter.drawRect(lidar_8_left_rect);
+  }
+
+  if(alarm_status[8] == true){
+    painter.setBrush(comms_ok);
+    painter.drawRect(lidar_9_left_rect);
+  }
+  else {
+    painter.setBrush(comms_bad);
+    painter.drawRect(lidar_9_left_rect);
+  }
+
+  if(alarm_status[9] == true){
+    painter.setBrush(comms_ok);
+    painter.drawRect(lidar_10_left_rect);
+  }
+  else {
+    painter.setBrush(comms_bad);
+    painter.drawRect(lidar_10_left_rect);
+  }
 
   QPainter radar_painter(this);
 
-  if(sub_flag == false){
+  if(alarm_status[0] == false){
     radar_painter.setRenderHint(QPainter::Antialiasing, true);
     radar_painter.setPen(QPen(Qt::black, 1, Qt::SolidLine, Qt::RoundCap));
     radar_painter.setBrush(QBrush(Qt::green, Qt::SolidPattern));
@@ -358,7 +411,7 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
     radar_painter.drawRect(346, 35, 20, 20);
 
   }
-  else if(sub_flag == true){
+  else if(alarm_status[0] == true){
     radar_painter.setRenderHint(QPainter::Antialiasing, true);
     radar_painter.setPen(QPen(Qt::black, 1, Qt::SolidLine, Qt::RoundCap));
     radar_painter.setBrush(QBrush(Qt::yellow, Qt::SolidPattern));
@@ -392,15 +445,15 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
 
   //Message Box
   textlabel->setFrameStyle(QFrame::Panel | QFrame::Sunken);
-  if(sub_flag == true){
+  // if(sub_flag == true){
     textlabel->setText("Radars in fault");
-  }
-  else if(sub_flag == false){
-    textlabel->setText("Lidars non responsive");
-  }
-  else{
-    textlabel->setText("No error");
-  }
+  // }
+  // else if(sub_flag == false){
+  //   textlabel->setText("Lidars non responsive");
+  // }
+  // else{
+  //   textlabel->setText("No error");
+  // }
 
   textlabel->setAlignment(Qt::AlignBottom | Qt::AlignRight);
   bottom_layout->addWidget( textlabel );
