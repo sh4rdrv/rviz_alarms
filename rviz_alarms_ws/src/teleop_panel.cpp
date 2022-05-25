@@ -56,9 +56,7 @@ namespace rviz_plugin_tutorials
 {
 
 extern bool sub_flag;
-// extern  QTextEdit *bigEditor; 
-// extern QTextEdit *bigEditor = new QTextEdit; 
-// extern QVBoxLayout* layout = new QVBoxLayout;
+
 QLabel *textlabel;
 
 
@@ -66,16 +64,12 @@ TeleopPanel::TeleopPanel( QWidget* parent)
   : rviz::Panel( parent )
 {
 
-  // bool sub_flag = false;
-
   QHBoxLayout* topic_layout = new QHBoxLayout;
   topic_layout->addWidget( new QLabel( "Lidar Alarms:" ));
 
   QHBoxLayout* radar_layout = new QHBoxLayout;
 
-
   QVBoxLayout* layout = new QVBoxLayout;
-  // QTextEdit *bigEditor = new QTextEdit; 
 
   QLabel *hline = new QLabel(" ");
   hline->setFrameStyle(QFrame::HLine | QFrame::Raised);
@@ -164,30 +158,11 @@ TeleopPanel::TeleopPanel( QWidget* parent)
   radar_layout->addWidget(radar_label7);
 
 
-  // //MESSAGE BOX
-  // // QVBoxLayout* bottom_layout = new QVBoxLayout;
-  // bottom_layout->addWidget(hline);
-  // bottom_layout->addWidget( new QLabel( "Messagebox:" ));
-
-  // // QTextEdit *bigEditor = new QTextEdit; 
-  // std::cout<<"here its is "<<sub_flag<<"\n";
-  // if(sub_flag == true){
-  //   bigEditor->clear();
-  //   bigEditor->setPlainText(tr("Radars are good"));
-  // }
-  // else if(sub_flag == false){
-  //   bigEditor->clear();
-  //   bigEditor->setPlainText(tr("lidars are good"));
-  // }
-  // else{
-  //   bigEditor->clear();
-  //   bigEditor->setPlainText(tr("No updates"));
-  // }
-  // bottom_layout->addWidget(bigEditor);
-
-
   ros_alarms_pub = nh_.advertise<std_msgs::Bool>("bool_value_topic", 1);
 
+  bottom_layout->addWidget( new QLabel( "Messages" ));
+  bottom_layout->addWidget(hline);
+  
   layout->addLayout( topic_layout );
   layout->addLayout( radar_layout );
   layout->addLayout( bottom_layout );
@@ -201,29 +176,20 @@ TeleopPanel::TeleopPanel( QWidget* parent)
   // Start the timer.
   output_timer->start( 100 );
   layout->update();
-
-
 }
 
 
 void TeleopPanel::updateTopic()
 {
-  // setTopic( "/ros_alarms_topic");
   alarms_sub = nh_.subscribe("/ros_alarms_topic", 1, &TeleopPanel::callbackAlarms,this);
-  // sub_flag = true;
-
 }
 
 void TeleopPanel::callbackAlarms(const std_msgs::Bool::ConstPtr& msg)
 {
-  // std::cout<<msg->data;
   std_msgs::Bool send_data = *msg;
   sub_flag = msg->data;
   ROS_INFO("%d", sub_flag);
   ros_alarms_pub.publish(send_data);
-  // TeleopPanel::paintEvent *newevent = new paintEvent;
-  // newevent.update();
-  
 }
 
 
@@ -231,10 +197,6 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
 {
 
   QPainter lidar_painter(this);
-
-  // QLabel *hline = new QLabel(" ");
-  // hline->setFrameStyle(QFrame::HLine | QFrame::Raised);
-  // hline->setLineWidth(2);
 
   if(sub_flag == true){
     lidar_painter.setRenderHint(QPainter::Antialiasing, true);  //Message box init
@@ -317,59 +279,22 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
     radar_painter.drawRect(315, 35, 20, 20);
   }
 
-  // QLabel *hline = new QLabel(" ");
-  // hline->setFrameStyle(QFrame::HLine | QFrame::Raised);
-  // hline->setLineWidth(2);
+  //Message Box
+  textlabel->setFrameStyle(QFrame::Panel | QFrame::Sunken);
+  if(sub_flag == true){
+    textlabel->setText("Radars in fault");
+  }
+  else if(sub_flag == false){
+    textlabel->setText("Lidars non responsive");
+  }
+  else{
+    textlabel->setText("No error");
+  }
 
-  // // //Message Box
-  // // QVBoxLayout* bottom_layout = new QVBoxLayout;
-  // // bottom_layout->addWidget(hline);
-  // // bottom_layout->addWidget( new QLabel( "Messagebox:" ));
+  textlabel->setAlignment(Qt::AlignBottom | Qt::AlignRight);
+  bottom_layout->addWidget( textlabel );
 
-  // // QTextEdit *bigEditor = new QTextEdit; 
-  // // std::cout<<"here its is "<<sub_flag<<"\n";
-  // if(sub_flag == true){
-  //       bigEditor->clear();
-
-  //   bigEditor->setPlainText(tr("LIDaaARS are good"));
-  // }
-  // else if(sub_flag == false){
-  //       bigEditor->clear();
-
-  //   bigEditor->setPlainText(tr("RADARS are good"));
-  // }
-  // else{
-  //       bigEditor->clear();
-
-  //   bigEditor->setPlainText(tr("No updates"));
-  // }
-  // bottom_layout->update();
-  // // bottom_layout->addWidget(bigEditor);
-
-  // // layout->addLayout( bottom_layout );
-  // layout->update();
-  // setLayout( layout );
-// QLabel *textlabel = new QLabel();
-
-
-
-textlabel->setFrameStyle(QFrame::Panel | QFrame::Sunken);
-if(sub_flag == true){
-  textlabel->setText("trueeee");
-}
-else{
-  textlabel->setText("faalse");
-}
-
-textlabel->setAlignment(Qt::AlignBottom | Qt::AlignRight);
-bottom_layout->addWidget( textlabel );
-
-
-
-// layout->addLayout( bottom_layout );
-// layout->update();
-
-update();
+  update();
  
 }
 

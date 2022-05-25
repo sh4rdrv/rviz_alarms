@@ -74,11 +74,6 @@ protected:
   QVBoxLayout* bottom_layout = new QVBoxLayout;
   QLabel *textlabel = new QLabel();
 
-  // QTextEdit *bigEditor = new QTextEdit; 
-
-  // QLineEdit* output_topic_editor_;
-  // QLabel* input_topic_editor_;
-
   void paintEvent(QPaintEvent *event);
 
   QString output_topic_;
