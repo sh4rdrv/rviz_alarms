@@ -32,6 +32,8 @@
 #ifndef Q_MOC_RUN
 #include <QColor>
 #include <QLabel>
+#include <QVBoxLayout>
+#include <QHBoxLayout>
 
 # include <ros/ros.h>
 
@@ -45,8 +47,6 @@ class QLineEdit;
 namespace rviz_plugin_tutorials
 {
 
-class DriveWidget;
-
 class TeleopPanel: public rviz::Panel
 {
 
@@ -54,7 +54,7 @@ Q_OBJECT
 
 public:
 
-  TeleopPanel( QWidget* parent = 0 );
+  TeleopPanel( QWidget* parent = 0);
 
   virtual void load( const rviz::Config& config );
   virtual void save( rviz::Config config ) const;
@@ -69,11 +69,12 @@ protected Q_SLOTS:
 
 protected:
 
-  DriveWidget* drive_widget_;
-
   bool sub_flag;
+  QVBoxLayout* layout = new QVBoxLayout;
+  QVBoxLayout* bottom_layout = new QVBoxLayout;
+  QLabel *textlabel = new QLabel();
 
-  // DriveWidget* bottom_widget;
+  // QTextEdit *bigEditor = new QTextEdit; 
 
   // QLineEdit* output_topic_editor_;
   // QLabel* input_topic_editor_;
