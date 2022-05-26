@@ -46,6 +46,7 @@
 #include <QBrush>
 #include <QAbstractButton>
 #include <QPaintEvent>
+#include <QString>
 
 #include <geometry_msgs/Twist.h>
 
@@ -766,16 +767,19 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
   //Message Box
   textlabel->setFrameStyle(QFrame::Panel | QFrame::Sunken);
   textlabel->setWordWrap(true);
-  if(alarm_status[0] == false){ textlabel->setText("Left Lidar 1 down"); }
-  if(alarm_status[1] == false){ textlabel->setText("Left Lidar 2 down"); }
-  if(alarm_status[2] == false){ textlabel->setText("Left Lidar 3 down"); }
-  if(alarm_status[3] == false){ textlabel->setText("Left Lidar 4 down"); }
-  if(alarm_status[4] == false){ textlabel->setText("Left Lidar 5 down"); }
-  if(alarm_status[5] == false){ textlabel->setText("Left Lidar 6 down"); }
-  if(alarm_status[6] == false){ textlabel->setText("Left Lidar 7 down"); }
-  if(alarm_status[7] == false){ textlabel->setText("Left Lidar 8 down"); }
-  if(alarm_status[8] == false){ textlabel->setText("Left Lidar 9 down"); }
-  if(alarm_status[9] == false){ textlabel->setText("Left Lidar 10 down"); }
+  QString temp_str = ("Rib Side alarms");
+  if(alarm_status[0] == false){ temp_str.append("\nLeft Lidar 1 down"); }
+  if(alarm_status[1] == false){ temp_str.append("\nLeft Lidar 2 down"); }
+  if(alarm_status[2] == false){ temp_str.append("\nLeft Lidar 3 down"); }
+  if(alarm_status[3] == false){ temp_str.append("\nLeft Lidar 4 down"); }
+  if(alarm_status[4] == false){ temp_str.append("\nLeft Lidar 5 down"); }
+  if(alarm_status[5] == false){ temp_str.append("\nLeft Lidar 6 down"); }
+  if(alarm_status[6] == false){ temp_str.append("\nLeft Lidar 7 down"); }
+  if(alarm_status[7] == false){ temp_str.append("\nLeft Lidar 8 down"); }
+  if(alarm_status[8] == false){ temp_str.append("\nLeft Lidar 9 down"); }
+  if(alarm_status[9] == false){ temp_str.append("\nLeft Lidar 10 down"); }
+
+  textlabel->setText(temp_str);
 
   // }
   // else if(sub_flag == false){
