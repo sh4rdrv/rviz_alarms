@@ -690,7 +690,7 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
   //   textlabel->setText("No error");
   // }
 
-  textlabel->setAlignment(Qt::AlignBottom | Qt::AlignRight);
+  textlabel->setAlignment(Qt::AlignBottom | Qt::AlignLeft);
   bottom_layout->addWidget( textlabel );
 
   update();
