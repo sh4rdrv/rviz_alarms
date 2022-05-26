@@ -81,174 +81,12 @@ TeleopPanel::TeleopPanel( QWidget* parent)
   hline->setFrameStyle(QFrame::HLine | QFrame::Raised);
   hline->setLineWidth(2);
 
-  //LIDAR Status
-  QLabel *lidar_label1 = new QLabel(" 1 ");
-  QLabel *lidar_label2 = new QLabel(" 2 ");
-  QLabel *lidar_label3 = new QLabel(" 3 ");
-  QLabel *lidar_label4 = new QLabel(" 4 ");
-  QLabel *lidar_label5 = new QLabel(" 5 ");
-  QLabel *lidar_label6 = new QLabel(" 6 ");
-  QLabel *lidar_label7 = new QLabel(" 7 ");
-  QLabel *lidar_label8 = new QLabel(" 8 ");
-  QLabel *lidar_label9 = new QLabel(" 9 ");
-  QLabel *lidar_label10 = new QLabel(" 10 ");
-
-  lidar_label1->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  lidar_label1->setLineWidth(1);
-  lidar_label1->setFixedSize(20 , 20);
-  lidar_label2->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  lidar_label2->setLineWidth(2);
-  lidar_label2->setFixedSize(20 , 20);
-  lidar_label3->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  lidar_label3->setLineWidth(2);
-  lidar_label3->setFixedSize(20 , 20);
-  lidar_label4->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  lidar_label4->setLineWidth(2);
-  lidar_label4->setFixedSize(20 , 20);
-  lidar_label5->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  lidar_label5->setLineWidth(2);
-  lidar_label5->setFixedSize(20 , 20);
-  lidar_label6->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  lidar_label6->setLineWidth(2);
-  lidar_label6->setFixedSize(20 , 20);
-  lidar_label7->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  lidar_label7->setLineWidth(2);
-  lidar_label7->setFixedSize(20 , 20);
-  lidar_label8->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  lidar_label8->setLineWidth(2);
-  lidar_label8->setFixedSize(20 , 20);
-  lidar_label9->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  lidar_label9->setLineWidth(2);
-  lidar_label9->setFixedSize(20 , 20);
-  lidar_label10->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  lidar_label10->setLineWidth(2);
-  lidar_label10->setFixedSize(20 , 20);
-
-  topic_layout->addWidget(lidar_label1);
-  topic_layout->addWidget(lidar_label2);
-  topic_layout->addWidget(lidar_label3);
-  topic_layout->addWidget(lidar_label4);
-  topic_layout->addWidget(lidar_label5);
-  topic_layout->addWidget(lidar_label6);
-  topic_layout->addWidget(lidar_label7);
-  topic_layout->addWidget(lidar_label8);
-  topic_layout->addWidget(lidar_label9);
-  topic_layout->addWidget(lidar_label10);
-
 
   //Right Lidar Status
   right_lidar_layout->addWidget( new QLabel( "Right Lidars:" ));
-  QLabel *right_lidar_label1 = new QLabel(" 1 ");
-  QLabel *right_lidar_label2 = new QLabel(" 2 ");
-  QLabel *right_lidar_label3 = new QLabel(" 3 ");
-  QLabel *right_lidar_label4 = new QLabel(" 4 ");
-  QLabel *right_lidar_label5 = new QLabel(" 5 ");
-  QLabel *right_lidar_label6 = new QLabel(" 6 ");
-  QLabel *right_lidar_label7 = new QLabel(" 7 ");
-  QLabel *right_lidar_label8 = new QLabel(" 8 ");
-  QLabel *right_lidar_label9 = new QLabel(" 9 ");
-  QLabel *right_lidar_label10 = new QLabel(" 10 ");
-
-  right_lidar_label1->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  right_lidar_label1->setLineWidth(1);
-  right_lidar_label1->setFixedSize(20 , 20);
-  right_lidar_label2->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  right_lidar_label2->setLineWidth(2);
-  right_lidar_label2->setFixedSize(20 , 20);
-  right_lidar_label3->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  right_lidar_label3->setLineWidth(2);
-  right_lidar_label3->setFixedSize(20 , 20);
-  right_lidar_label4->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  right_lidar_label4->setLineWidth(2);
-  right_lidar_label4->setFixedSize(20 , 20);
-  right_lidar_label5->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  right_lidar_label5->setLineWidth(2);
-  right_lidar_label5->setFixedSize(20 , 20);
-  right_lidar_label6->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  right_lidar_label6->setLineWidth(2);
-  right_lidar_label6->setFixedSize(20 , 20);
-  right_lidar_label7->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  right_lidar_label7->setLineWidth(2);
-  right_lidar_label7->setFixedSize(20 , 20);
-  right_lidar_label8->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  right_lidar_label8->setLineWidth(2);
-  right_lidar_label8->setFixedSize(20 , 20);
-  right_lidar_label9->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  right_lidar_label9->setLineWidth(2);
-  right_lidar_label9->setFixedSize(20 , 20);
-  right_lidar_label10->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  right_lidar_label10->setLineWidth(2);
-  right_lidar_label10->setFixedSize(20 , 20);
-
-
-  right_lidar_layout->addWidget(right_lidar_label1);
-  right_lidar_layout->addWidget(right_lidar_label2);
-  right_lidar_layout->addWidget(right_lidar_label3);
-  right_lidar_layout->addWidget(right_lidar_label4);
-  right_lidar_layout->addWidget(right_lidar_label5);
-  right_lidar_layout->addWidget(right_lidar_label6);
-  right_lidar_layout->addWidget(right_lidar_label7);
-  right_lidar_layout->addWidget(right_lidar_label8);
-  right_lidar_layout->addWidget(right_lidar_label9);
-  right_lidar_layout->addWidget(right_lidar_label10);
-
 
   //RADAR Status
   radar_layout->addWidget( new QLabel( "Radar Alarms:" ));
-
-  QLabel *radar_label1 = new QLabel(" 1 ");
-  QLabel *radar_label2 = new QLabel(" 2 ");
-  QLabel *radar_label3 = new QLabel(" 3 ");
-  QLabel *radar_label4 = new QLabel(" 4 ");
-  QLabel *radar_label5 = new QLabel(" 5 ");
-  QLabel *radar_label6 = new QLabel(" 6 ");
-  QLabel *radar_label7 = new QLabel(" 7 ");
-  QLabel *radar_label8 = new QLabel(" 8 ");
-  QLabel *radar_label9 = new QLabel(" 9 ");
-  QLabel *radar_label10 = new QLabel(" 10 ");
-
-  radar_label1->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  radar_label1->setLineWidth(1);
-  radar_label1->setFixedSize(20 , 20);
-  radar_label2->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  radar_label2->setLineWidth(2);
-  radar_label2->setFixedSize(20 , 20);
-  radar_label3->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  radar_label3->setLineWidth(2);
-  radar_label3->setFixedSize(20 , 20);
-  radar_label4->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  radar_label4->setLineWidth(2);
-  radar_label4->setFixedSize(20 , 20);
-  radar_label5->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  radar_label5->setLineWidth(2);
-  radar_label5->setFixedSize(20 , 20);
-  radar_label6->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  radar_label6->setLineWidth(2);
-  radar_label6->setFixedSize(20 , 20);
-  radar_label7->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  radar_label7->setLineWidth(2);
-  radar_label7->setFixedSize(20 , 20);
-  radar_label8->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  radar_label8->setLineWidth(2);
-  radar_label8->setFixedSize(20 , 20);
-  radar_label9->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  radar_label9->setLineWidth(2);
-  radar_label9->setFixedSize(20 , 20);
-  radar_label10->setFrameStyle(QFrame::StyledPanel | QFrame::Plain);
-  radar_label10->setLineWidth(2);
-  radar_label10->setFixedSize(20 , 20);
-
-
-  radar_layout->addWidget(radar_label1);
-  radar_layout->addWidget(radar_label2);
-  radar_layout->addWidget(radar_label3);
-  radar_layout->addWidget(radar_label4);
-  radar_layout->addWidget(radar_label5);
-  radar_layout->addWidget(radar_label6);
-  radar_layout->addWidget(radar_label7);
-  radar_layout->addWidget(radar_label8);
-  radar_layout->addWidget(radar_label9);
-  radar_layout->addWidget(radar_label10);
 
 
   ros_alarms_pub = nh_.advertise<std_msgs::Bool>("bool_value_topic", 1);
@@ -370,91 +208,111 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
   if(alarm_status[0] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_1_left_rect);
+    painter.drawText(lidar_1_left_rect,Qt::AlignCenter,"1");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(lidar_1_left_rect);
+    painter.drawText(lidar_1_left_rect,Qt::AlignCenter,"1");
   }
 
   if(alarm_status[1] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_2_left_rect);
+    painter.drawText(lidar_2_left_rect,Qt::AlignCenter,"2");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(lidar_2_left_rect);
+    painter.drawText(lidar_2_left_rect,Qt::AlignCenter,"2");
   }
 
   if(alarm_status[2] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_3_left_rect);
+    painter.drawText(lidar_3_left_rect,Qt::AlignCenter,"3");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(lidar_3_left_rect);
+    painter.drawText(lidar_3_left_rect,Qt::AlignCenter,"3");
   }
 
   if(alarm_status[3] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_4_left_rect);
+    painter.drawText(lidar_4_left_rect,Qt::AlignCenter,"4");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(lidar_4_left_rect);
+    painter.drawText(lidar_4_left_rect,Qt::AlignCenter,"4");
   }
 
   if(alarm_status[4] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_5_left_rect);
+    painter.drawText(lidar_5_left_rect,Qt::AlignCenter,"5");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(lidar_5_left_rect);
+    painter.drawText(lidar_5_left_rect,Qt::AlignCenter,"5");
   }
 
   if(alarm_status[5] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_6_left_rect);
+    painter.drawText(lidar_6_left_rect,Qt::AlignCenter,"6");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(lidar_6_left_rect);
+    painter.drawText(lidar_6_left_rect,Qt::AlignCenter,"6");
   }
 
   if(alarm_status[6] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_7_left_rect);
+    painter.drawText(lidar_7_left_rect,Qt::AlignCenter,"7");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(lidar_7_left_rect);
+    painter.drawText(lidar_7_left_rect,Qt::AlignCenter,"7");
   }
 
   if(alarm_status[7] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_8_left_rect);
+    painter.drawText(lidar_8_left_rect,Qt::AlignCenter,"8");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(lidar_8_left_rect);
+    painter.drawText(lidar_8_left_rect,Qt::AlignCenter,"8");
   }
 
   if(alarm_status[8] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_9_left_rect);
+    painter.drawText(lidar_9_left_rect,Qt::AlignCenter,"9");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(lidar_9_left_rect);
+    painter.drawText(lidar_9_left_rect,Qt::AlignCenter,"9");
   }
 
   if(alarm_status[9] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_10_left_rect);
+    painter.drawText(lidar_10_left_rect,Qt::AlignCenter,"10");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(lidar_10_left_rect);
+    painter.drawText(lidar_10_left_rect,Qt::AlignCenter,"10");
   }
 
   //Right Lidars
@@ -523,91 +381,112 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
   if(alarm_status[0] == false){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_1_right_rect);
+    painter.drawText(lidar_1_right_rect,Qt::AlignCenter,"1");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(lidar_1_right_rect);
+    painter.drawText(lidar_1_right_rect,Qt::AlignCenter,"1");
   }
 
   if(alarm_status[1] == false){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_2_right_rect);
+    painter.drawText(lidar_2_right_rect,Qt::AlignCenter,"2");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(lidar_2_right_rect);
+    painter.drawText(lidar_2_right_rect,Qt::AlignCenter,"2");
   }
 
   if(alarm_status[2] == false){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_3_right_rect);
-  }
+    painter.drawText(lidar_3_right_rect,Qt::AlignCenter,"3");
+  }    
+
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(lidar_3_right_rect);
+    painter.drawText(lidar_3_right_rect,Qt::AlignCenter,"3");
   }
 
   if(alarm_status[3] == false){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_4_right_rect);
+    painter.drawText(lidar_4_right_rect,Qt::AlignCenter,"4");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(lidar_4_right_rect);
+    painter.drawText(lidar_4_right_rect,Qt::AlignCenter,"4");
   }
 
   if(alarm_status[4] == false){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_5_right_rect);
+    painter.drawText(lidar_5_right_rect,Qt::AlignCenter,"5");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(lidar_5_right_rect);
+    painter.drawText(lidar_5_right_rect,Qt::AlignCenter,"5");
   }
 
   if(alarm_status[5] == false){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_6_right_rect);
+    painter.drawText(lidar_6_right_rect,Qt::AlignCenter,"6");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(lidar_6_right_rect);
+    painter.drawText(lidar_6_right_rect,Qt::AlignCenter,"6");
   }
 
   if(alarm_status[6] == false){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_7_right_rect);
+    painter.drawText(lidar_7_right_rect,Qt::AlignCenter,"7");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(lidar_7_right_rect);
+    painter.drawText(lidar_7_right_rect,Qt::AlignCenter,"7");
   }
 
   if(alarm_status[7] == false){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_8_right_rect);
+    painter.drawText(lidar_8_right_rect,Qt::AlignCenter,"8");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(lidar_8_right_rect);
+    painter.drawText(lidar_8_right_rect,Qt::AlignCenter,"8");
   }
 
   if(alarm_status[8] == false){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_9_right_rect);
+    painter.drawText(lidar_9_right_rect,Qt::AlignCenter,"9");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(lidar_9_right_rect);
+    painter.drawText(lidar_9_right_rect,Qt::AlignCenter,"9");
   }
 
   if(alarm_status[9] == false){
     painter.setBrush(comms_ok);
     painter.drawRect(lidar_10_right_rect);
+    painter.drawText(lidar_10_right_rect,Qt::AlignCenter,"10");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(lidar_10_right_rect);
+    painter.drawText(lidar_10_right_rect,Qt::AlignCenter,"10");
   }
 
 
@@ -677,97 +556,119 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
   if(alarm_status[0] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(radar_1_rect);
+    painter.drawText(radar_1_rect,Qt::AlignCenter,"1");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(radar_1_rect);
+    painter.drawText(radar_1_rect,Qt::AlignCenter,"1");
   }
 
   if(alarm_status[1] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(radar_2_rect);
+    painter.drawText(radar_2_rect,Qt::AlignCenter,"2");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(radar_2_rect);
+    painter.drawText(radar_2_rect,Qt::AlignCenter,"2");
   }
 
   if(alarm_status[2] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(radar_3_rect);
+    painter.drawText(radar_3_rect,Qt::AlignCenter,"3");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(radar_3_rect);
+    painter.drawText(radar_3_rect,Qt::AlignCenter,"3");
+
   }
 
   if(alarm_status[3] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(radar_4_rect);
+    painter.drawText(radar_4_rect,Qt::AlignCenter,"4");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(radar_4_rect);
+    painter.drawText(radar_4_rect,Qt::AlignCenter,"4");
   }
 
   if(alarm_status[4] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(radar_5_rect);
+    painter.drawText(radar_5_rect,Qt::AlignCenter,"5");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(radar_5_rect);
+    painter.drawText(radar_5_rect,Qt::AlignCenter,"5");
   }
 
   if(alarm_status[5] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(radar_6_rect);
+    painter.drawText(radar_6_rect,Qt::AlignCenter,"6");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(radar_6_rect);
+    painter.drawText(radar_6_rect,Qt::AlignCenter,"6");
   }
 
   if(alarm_status[6] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(radar_7_rect);
+    painter.drawText(radar_7_rect,Qt::AlignCenter,"7");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(radar_7_rect);
+    painter.drawText(radar_7_rect,Qt::AlignCenter,"7");
   }
 
   if(alarm_status[7] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(radar_8_rect);
+    painter.drawText(radar_8_rect,Qt::AlignCenter,"8");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(radar_8_rect);
+    painter.drawText(radar_8_rect,Qt::AlignCenter,"8");
   }
 
   if(alarm_status[8] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(radar_9_rect);
+    painter.drawText(radar_9_rect,Qt::AlignCenter,"9");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(radar_9_rect);
+    painter.drawText(radar_9_rect,Qt::AlignCenter,"9");
   }
 
   if(alarm_status[9] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(radar_10_rect);
+    painter.drawText(radar_10_rect,Qt::AlignCenter,"10");
   }
   else {
     painter.setBrush(comms_bad);
     painter.drawRect(radar_10_rect);
+    painter.drawText(radar_10_rect,Qt::AlignCenter,"10");
   }
 
   //Message Box
   textlabel->setFrameStyle(QFrame::Panel | QFrame::Sunken);
   textlabel->setWordWrap(true);
-  QString temp_str = ("Rib Side alarms");
+  textlabel->setLineWidth(3);
+  QString temp_str = (" ");
   if(alarm_status[0] == false){ temp_str.append("\nLeft Lidar 1 down"); }
   if(alarm_status[1] == false){ temp_str.append("\nLeft Lidar 2 down"); }
   if(alarm_status[2] == false){ temp_str.append("\nLeft Lidar 3 down"); }
