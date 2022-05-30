@@ -66,13 +66,29 @@ extern bool alarm_status[10];
 QLabel *textlabel;
 
 const int car_num = 7;
+const int left_lidar_top = 10;
+const int left_lidar_bottom = 30;
+const int right_lidar_top = 35;
+const int right_lidar_bottom = 55;
+const int radar_top = 60;
+const int radar_bottom = 80;
+const int extension_top = 105;
+const int extension_bottom = 125;
+const int intercar_angle_top = 130;
+const int intercar_angle_bottom = 150;
+const int steering_angle_top = 155;
+const int steering_angle_bottom = 175;
+const int steering_front_top = 180;
+const int steering_front_bottom = 200;
+const int steering_rear_top = 205;
+const int steering_rear_bottom = 225;
+
 
 TeleopPanel::TeleopPanel( QWidget* parent)
   : rviz::Panel( parent )
 {
 
   QHBoxLayout* topic_layout = new QHBoxLayout;
-  // topic_layout->addWidget( new QLabel( "Left Lidars:" ));
 
   QHBoxLayout* radar_layout = new QHBoxLayout;
 
@@ -91,30 +107,12 @@ TeleopPanel::TeleopPanel( QWidget* parent)
   hline2->setFrameStyle(QFrame::HLine | QFrame::Raised);
   hline2->setLineWidth(2);
 
-  //Right Lidar Status
-  // right_lidar_layout->addWidget( new QLabel( "Right Lidars:" ));
-
-  //RADAR Status
-  // radar_layout->addWidget( new QLabel( "Radar Alarms:" ));
-
-  //Extension
-  // extension_layout->addWidget( new QLabel( "Extension:\n" ));
-  // extension_layout->addWidget(hline2);
-
-
   ros_alarms_pub = nh_.advertise<std_msgs::Bool>("bool_value_topic", 1);
 
   textlabel->setFrameStyle(QFrame::Panel | QFrame::Sunken);
   textlabel->setWordWrap(true);
   textlabel->setLineWidth(3);
-
-  // QScrollArea *scrollArea = new QScrollArea;
-  // scrollArea->setBackgroundRole(QPalette::Dark);
-  // scrollArea->setWidget(textlabel);
-
-  // bottom_layout->addWidget( new QLabel( "Messages" ));
-  // bottom_layout->addWidget(hline);
-  // bottom_layout->addWidget( scrollArea );
+  textlabel->setAlignment(Qt::AlignBottom);
 
   
   layout->addLayout( topic_layout );
@@ -168,30 +166,26 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
   painter.setPen(QPen(Qt::black, 1, Qt::SolidLine, Qt::RoundCap));
 
 
-
-
-  //Left Lidars
-
-  painter.drawText(20,25,"Left Lidars");
-
+  //Parameters
   int setleft[car_num], setright[car_num];
   int cnt = 0;
   while(cnt < car_num){
-    setleft[cnt] = 110 + cnt*25;
-    setright[cnt] = 130 + cnt*25;
+    setleft[cnt] = 125 + cnt*25;
+    setright[cnt] = 145 + cnt*25;
     cnt++; 
   }
 
-  // int setleft[10] = {108, 135, 160, 185, 212, 238, 265, 292, 319, 346};
-  // int setright[10] = {128, 155, 180, 205, 232, 258, 285, 312, 339, 366};
+  //Left Lidars
 
-  QRect newrect[car_num];
+  painter.drawText(20,left_lidar_top+10,"Left Lidars");
+
+  QRect left_lidar[car_num];
 
   for (int i=0;i<car_num;i++){
-    newrect[i].setTop(10);
-    newrect[i].setLeft(setleft[i]);
-    newrect[i].setBottom(30);
-    newrect[i].setRight(setright[i]);
+    left_lidar[i].setTop(left_lidar_top);
+    left_lidar[i].setLeft(setleft[i]);
+    left_lidar[i].setBottom(left_lidar_bottom);
+    left_lidar[i].setRight(setright[i]);
   }
 
   for(int i=0;i<car_num;i++){
@@ -199,579 +193,217 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
     QString str = QString::fromStdString(c);
     if(alarm_status[i] == true){
       painter.setBrush(comms_ok);
-      painter.drawRect(newrect[i]);
-      painter.drawText(newrect[i],Qt::AlignCenter,str);
+      painter.drawRect(left_lidar[i]);
+      painter.drawText(left_lidar[i],Qt::AlignCenter,str);
     }
     else {
       painter.setBrush(comms_bad);
-      painter.drawRect(newrect[i]);
-      painter.drawText(newrect[i],Qt::AlignCenter, str);
+      painter.drawRect(left_lidar[i]);
+      painter.drawText(left_lidar[i],Qt::AlignCenter, str);
     }
   }
   
   //Right Lidars
 
-  painter.drawText(20,55,"Right Lidars");
+  painter.drawText(20,right_lidar_top+10,"Right Lidars");
 
+  QRect right_lidar[car_num];
 
-  QRect lidar_1_right_rect;
-  QRect lidar_2_right_rect;
-  QRect lidar_3_right_rect;
-  QRect lidar_4_right_rect;
-  QRect lidar_5_right_rect;
-  QRect lidar_6_right_rect;
-  QRect lidar_7_right_rect;
-  QRect lidar_8_right_rect;
-  QRect lidar_9_right_rect;
-  QRect lidar_10_right_rect;
-
-  lidar_1_right_rect.setTop(35);
-  lidar_1_right_rect.setLeft(108);
-  lidar_1_right_rect.setBottom(55);
-  lidar_1_right_rect.setRight(128);
-
-  lidar_2_right_rect.setTop(35);
-  lidar_2_right_rect.setLeft(135);
-  lidar_2_right_rect.setBottom(55);
-  lidar_2_right_rect.setRight(155);
-
-  lidar_3_right_rect.setTop(35);
-  lidar_3_right_rect.setLeft(160);
-  lidar_3_right_rect.setBottom(55);
-  lidar_3_right_rect.setRight(180);
-
-  lidar_4_right_rect.setTop(35);
-  lidar_4_right_rect.setLeft(185);
-  lidar_4_right_rect.setBottom(55);
-  lidar_4_right_rect.setRight(205);
-
-  lidar_5_right_rect.setTop(35);
-  lidar_5_right_rect.setLeft(212);
-  lidar_5_right_rect.setBottom(55);
-  lidar_5_right_rect.setRight(232); 
-
-  lidar_6_right_rect.setTop(35);
-  lidar_6_right_rect.setLeft(238);
-  lidar_6_right_rect.setBottom(55);
-  lidar_6_right_rect.setRight(258);  
-
-  lidar_7_right_rect.setTop(35);
-  lidar_7_right_rect.setLeft(265);
-  lidar_7_right_rect.setBottom(55);
-  lidar_7_right_rect.setRight(285); 
-
-  lidar_8_right_rect.setTop(35);
-  lidar_8_right_rect.setLeft(292);
-  lidar_8_right_rect.setBottom(55);
-  lidar_8_right_rect.setRight(312); 
-
-  lidar_9_right_rect.setTop(35);
-  lidar_9_right_rect.setLeft(319);
-  lidar_9_right_rect.setBottom(55);
-  lidar_9_right_rect.setRight(339); 
-
-  lidar_10_right_rect.setTop(35);
-  lidar_10_right_rect.setLeft(346);
-  lidar_10_right_rect.setBottom(55);
-  lidar_10_right_rect.setRight(366); 
-
-  if(alarm_status[0] == false){
-    painter.setBrush(comms_ok);
-    painter.drawRect(lidar_1_right_rect);
-    painter.drawText(lidar_1_right_rect,Qt::AlignCenter,"1");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(lidar_1_right_rect);
-    painter.drawText(lidar_1_right_rect,Qt::AlignCenter,"1");
+  for (int i=0;i<car_num;i++){
+    right_lidar[i].setTop(right_lidar_top);
+    right_lidar[i].setLeft(setleft[i]);
+    right_lidar[i].setBottom(right_lidar_bottom);
+    right_lidar[i].setRight(setright[i]);
   }
 
-  if(alarm_status[1] == false){
-    painter.setBrush(comms_ok);
-    painter.drawRect(lidar_2_right_rect);
-    painter.drawText(lidar_2_right_rect,Qt::AlignCenter,"2");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(lidar_2_right_rect);
-    painter.drawText(lidar_2_right_rect,Qt::AlignCenter,"2");
-  }
-
-  if(alarm_status[2] == false){
-    painter.setBrush(comms_ok);
-    painter.drawRect(lidar_3_right_rect);
-    painter.drawText(lidar_3_right_rect,Qt::AlignCenter,"3");
-  }    
-
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(lidar_3_right_rect);
-    painter.drawText(lidar_3_right_rect,Qt::AlignCenter,"3");
-  }
-
-  if(alarm_status[3] == false){
-    painter.setBrush(comms_ok);
-    painter.drawRect(lidar_4_right_rect);
-    painter.drawText(lidar_4_right_rect,Qt::AlignCenter,"4");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(lidar_4_right_rect);
-    painter.drawText(lidar_4_right_rect,Qt::AlignCenter,"4");
-  }
-
-  if(alarm_status[4] == false){
-    painter.setBrush(comms_ok);
-    painter.drawRect(lidar_5_right_rect);
-    painter.drawText(lidar_5_right_rect,Qt::AlignCenter,"5");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(lidar_5_right_rect);
-    painter.drawText(lidar_5_right_rect,Qt::AlignCenter,"5");
-  }
-
-  if(alarm_status[5] == false){
-    painter.setBrush(comms_ok);
-    painter.drawRect(lidar_6_right_rect);
-    painter.drawText(lidar_6_right_rect,Qt::AlignCenter,"6");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(lidar_6_right_rect);
-    painter.drawText(lidar_6_right_rect,Qt::AlignCenter,"6");
-  }
-
-  if(alarm_status[6] == false){
-    painter.setBrush(comms_ok);
-    painter.drawRect(lidar_7_right_rect);
-    painter.drawText(lidar_7_right_rect,Qt::AlignCenter,"7");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(lidar_7_right_rect);
-    painter.drawText(lidar_7_right_rect,Qt::AlignCenter,"7");
-  }
-
-  if(alarm_status[7] == false){
-    painter.setBrush(comms_ok);
-    painter.drawRect(lidar_8_right_rect);
-    painter.drawText(lidar_8_right_rect,Qt::AlignCenter,"8");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(lidar_8_right_rect);
-    painter.drawText(lidar_8_right_rect,Qt::AlignCenter,"8");
-  }
-
-  if(alarm_status[8] == false){
-    painter.setBrush(comms_ok);
-    painter.drawRect(lidar_9_right_rect);
-    painter.drawText(lidar_9_right_rect,Qt::AlignCenter,"9");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(lidar_9_right_rect);
-    painter.drawText(lidar_9_right_rect,Qt::AlignCenter,"9");
-  }
-
-  if(alarm_status[9] == false){
-    painter.setBrush(comms_ok);
-    painter.drawRect(lidar_10_right_rect);
-    painter.drawText(lidar_10_right_rect,Qt::AlignCenter,"10");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(lidar_10_right_rect);
-    painter.drawText(lidar_10_right_rect,Qt::AlignCenter,"10");
+  for(int i=0;i<car_num;i++){
+    std::string c = std::to_string(i+1);
+    QString str = QString::fromStdString(c);
+    if(alarm_status[i] == true){
+      painter.setBrush(comms_ok);
+      painter.drawRect(right_lidar[i]);
+      painter.drawText(right_lidar[i],Qt::AlignCenter,str);
+    }
+    else {
+      painter.setBrush(comms_bad);
+      painter.drawRect(right_lidar[i]);
+      painter.drawText(right_lidar[i],Qt::AlignCenter, str);
+    }
   }
 
 
 // Radars
 
-  painter.drawText(20,85,"Radars");
+  painter.drawText(20,radar_top+10,"Radars");
 
+  QRect radars[car_num];
 
-  QRect radar_1_rect;
-  QRect radar_2_rect;
-  QRect radar_3_rect;
-  QRect radar_4_rect;
-  QRect radar_5_rect;
-  QRect radar_6_rect;
-  QRect radar_7_rect;
-  QRect radar_8_rect;
-  QRect radar_9_rect;
-  QRect radar_10_rect;
-
-  radar_1_rect.setTop(60);
-  radar_1_rect.setLeft(108);
-  radar_1_rect.setBottom(80);
-  radar_1_rect.setRight(128);
-
-  radar_2_rect.setTop(60);
-  radar_2_rect.setLeft(135);
-  radar_2_rect.setBottom(80);
-  radar_2_rect.setRight(155);
-
-  radar_3_rect.setTop(60);
-  radar_3_rect.setLeft(160);
-  radar_3_rect.setBottom(80);
-  radar_3_rect.setRight(180);
-
-  radar_4_rect.setTop(60);
-  radar_4_rect.setLeft(185);
-  radar_4_rect.setBottom(80);
-  radar_4_rect.setRight(205);
-
-  radar_5_rect.setTop(60);
-  radar_5_rect.setLeft(212);
-  radar_5_rect.setBottom(80);
-  radar_5_rect.setRight(232); 
-
-  radar_6_rect.setTop(60);
-  radar_6_rect.setLeft(238);
-  radar_6_rect.setBottom(80);
-  radar_6_rect.setRight(258);  
-
-  radar_7_rect.setTop(60);
-  radar_7_rect.setLeft(265);
-  radar_7_rect.setBottom(80);
-  radar_7_rect.setRight(285); 
-
-  radar_8_rect.setTop(60);
-  radar_8_rect.setLeft(292);
-  radar_8_rect.setBottom(80);
-  radar_8_rect.setRight(312); 
-
-  radar_9_rect.setTop(60);
-  radar_9_rect.setLeft(319);
-  radar_9_rect.setBottom(80);
-  radar_9_rect.setRight(339); 
-
-  radar_10_rect.setTop(60);
-  radar_10_rect.setLeft(346);
-  radar_10_rect.setBottom(80);
-  radar_10_rect.setRight(366); 
-
-  if(alarm_status[0] == true){
-    painter.setBrush(comms_ok);
-    painter.drawRect(radar_1_rect);
-    painter.drawText(radar_1_rect,Qt::AlignCenter,"1");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(radar_1_rect);
-    painter.drawText(radar_1_rect,Qt::AlignCenter,"1");
+  for (int i=0;i<car_num;i++){
+    radars[i].setTop(radar_top);
+    radars[i].setLeft(setleft[i]);
+    radars[i].setBottom(radar_bottom);
+    radars[i].setRight(setright[i]);
   }
 
-  if(alarm_status[1] == true){
-    painter.setBrush(comms_ok);
-    painter.drawRect(radar_2_rect);
-    painter.drawText(radar_2_rect,Qt::AlignCenter,"2");
+  for(int i=0;i<car_num;i++){
+    std::string c = std::to_string(i+1);
+    QString str = QString::fromStdString(c);
+    if(alarm_status[i] == true){
+      painter.setBrush(comms_ok);
+      painter.drawRect(radars[i]);
+      painter.drawText(radars[i],Qt::AlignCenter,str);
+    }
+    else {
+      painter.setBrush(comms_bad);
+      painter.drawRect(radars[i]);
+      painter.drawText(radars[i],Qt::AlignCenter, str);
+    }
   }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(radar_2_rect);
-    painter.drawText(radar_2_rect,Qt::AlignCenter,"2");
-  }
-
-  if(alarm_status[2] == true){
-    painter.setBrush(comms_ok);
-    painter.drawRect(radar_3_rect);
-    painter.drawText(radar_3_rect,Qt::AlignCenter,"3");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(radar_3_rect);
-    painter.drawText(radar_3_rect,Qt::AlignCenter,"3");
-
-  }
-
-  if(alarm_status[3] == true){
-    painter.setBrush(comms_ok);
-    painter.drawRect(radar_4_rect);
-    painter.drawText(radar_4_rect,Qt::AlignCenter,"4");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(radar_4_rect);
-    painter.drawText(radar_4_rect,Qt::AlignCenter,"4");
-  }
-
-  if(alarm_status[4] == true){
-    painter.setBrush(comms_ok);
-    painter.drawRect(radar_5_rect);
-    painter.drawText(radar_5_rect,Qt::AlignCenter,"5");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(radar_5_rect);
-    painter.drawText(radar_5_rect,Qt::AlignCenter,"5");
-  }
-
-  if(alarm_status[5] == true){
-    painter.setBrush(comms_ok);
-    painter.drawRect(radar_6_rect);
-    painter.drawText(radar_6_rect,Qt::AlignCenter,"6");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(radar_6_rect);
-    painter.drawText(radar_6_rect,Qt::AlignCenter,"6");
-  }
-
-  if(alarm_status[6] == true){
-    painter.setBrush(comms_ok);
-    painter.drawRect(radar_7_rect);
-    painter.drawText(radar_7_rect,Qt::AlignCenter,"7");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(radar_7_rect);
-    painter.drawText(radar_7_rect,Qt::AlignCenter,"7");
-  }
-
-  if(alarm_status[7] == true){
-    painter.setBrush(comms_ok);
-    painter.drawRect(radar_8_rect);
-    painter.drawText(radar_8_rect,Qt::AlignCenter,"8");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(radar_8_rect);
-    painter.drawText(radar_8_rect,Qt::AlignCenter,"8");
-  }
-
-  if(alarm_status[8] == true){
-    painter.setBrush(comms_ok);
-    painter.drawRect(radar_9_rect);
-    painter.drawText(radar_9_rect,Qt::AlignCenter,"9");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(radar_9_rect);
-    painter.drawText(radar_9_rect,Qt::AlignCenter,"9");
-  }
-
-  if(alarm_status[9] == true){
-    painter.setBrush(comms_ok);
-    painter.drawRect(radar_10_rect);
-    painter.drawText(radar_10_rect,Qt::AlignCenter,"10");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(radar_10_rect);
-    painter.drawText(radar_10_rect,Qt::AlignCenter,"10");
-  }
-
-
-
 
   // Extension
 
-  painter.drawText(20,120,"Extension ");
+  painter.drawText(20,extension_top+10,"Extension ");
 
-  QRect bridge_1_ext;
-  QRect bridge_2_ext;
-  QRect bridge_3_ext;
-  QRect bridge_4_ext;
-  QRect bridge_5_ext;
-  QRect bridge_6_ext;
-  QRect bridge_7_ext;
-  QRect bridge_8_ext;
-  QRect bridge_9_ext;
-  QRect bridge_10_ext;
+  QRect extension[car_num];
 
-  bridge_1_ext.setTop(105);
-  bridge_1_ext.setLeft(108);
-  bridge_1_ext.setBottom(125);
-  bridge_1_ext.setRight(128);
+  for (int i=0;i<car_num;i++){
+    extension[i].setTop(extension_top);
+    extension[i].setLeft(setleft[i]);
+    extension[i].setBottom(extension_bottom);
+    extension[i].setRight(setright[i]);
+  }
 
-  bridge_2_ext.setTop(105);
-  bridge_2_ext.setLeft(135);
-  bridge_2_ext.setBottom(125);
-  bridge_2_ext.setRight(155);
+  for(int i=0;i<car_num;i++){
+    std::string c = std::to_string(i+1);
+    QString str = QString::fromStdString(c);
+    if(alarm_status[i] == true){
+      painter.setBrush(comms_ok);
+      painter.drawRect(extension[i]);
+      painter.drawText(extension[i],Qt::AlignCenter,str);
+    }
+    else {
+      painter.setBrush(comms_bad);
+      painter.drawRect(extension[i]);
+      painter.drawText(extension[i],Qt::AlignCenter, str);
+    }
+  }
 
-  bridge_3_ext.setTop(105);
-  bridge_3_ext.setLeft(160);
-  bridge_3_ext.setBottom(125);
-  bridge_3_ext.setRight(180);
 
-  bridge_4_ext.setTop(105);
-  bridge_4_ext.setLeft(185);
-  bridge_4_ext.setBottom(125);
-  bridge_4_ext.setRight(205);
+  // Intercar angle
 
-  bridge_5_ext.setTop(105);
-  bridge_5_ext.setLeft(212);
-  bridge_5_ext.setBottom(125);
-  bridge_5_ext.setRight(232); 
+  painter.drawText(20,intercar_angle_top+10,"Intercar Angle ");
 
-  bridge_6_ext.setTop(105);
-  bridge_6_ext.setLeft(238);
-  bridge_6_ext.setBottom(125);
-  bridge_6_ext.setRight(258);  
 
-  bridge_7_ext.setTop(105);
-  bridge_7_ext.setLeft(265);
-  bridge_7_ext.setBottom(125);
-  bridge_7_ext.setRight(285); 
+  QRect intercar_angle[car_num];
 
-  bridge_8_ext.setTop(105);
-  bridge_8_ext.setLeft(292);
-  bridge_8_ext.setBottom(125);
-  bridge_8_ext.setRight(312); 
+  for (int i=0;i<car_num;i++){
+    intercar_angle[i].setTop(intercar_angle_top);
+    intercar_angle[i].setLeft(setleft[i]);
+    intercar_angle[i].setBottom(intercar_angle_bottom);
+    intercar_angle[i].setRight(setright[i]);
+  }
 
-  bridge_9_ext.setTop(105);
-  bridge_9_ext.setLeft(319);
-  bridge_9_ext.setBottom(125);
-  bridge_9_ext.setRight(339); 
+  for(int i=0;i<car_num;i++){
+    std::string c = std::to_string(i+1);
+    QString str = QString::fromStdString(c);
+    if(alarm_status[i] == true){
+      painter.setBrush(comms_ok);
+      painter.drawRect(intercar_angle[i]);
+      painter.drawText(intercar_angle[i],Qt::AlignCenter,str);
+    }
+    else {
+      painter.setBrush(comms_bad);
+      painter.drawRect(intercar_angle[i]);
+      painter.drawText(intercar_angle[i],Qt::AlignCenter, str);
+    }
+  }
 
-  bridge_10_ext.setTop(105);
-  bridge_10_ext.setLeft(346);
-  bridge_10_ext.setBottom(125);
-  bridge_10_ext.setRight(366); 
 
+  // Steering angle
+
+  painter.drawText(20,steering_angle_top+10,"Steering Angle ");
+
+  QRect steering_angle[car_num];
+
+  for (int i=0;i<car_num-1;i++){
+    steering_angle[i].setTop(steering_angle_top);
+    steering_angle[i].setLeft(setleft[i]);
+    steering_angle[i].setBottom(steering_angle_bottom);
+    steering_angle[i].setRight(setright[i]);
+  }
+
+  for(int i=0;i<car_num;i++){
+    std::string c = std::to_string(i+1);
+    QString str = QString::fromStdString(c);
+    if(alarm_status[i] == true){
+      painter.setBrush(comms_ok);
+      painter.drawRect(steering_angle[i]);
+      painter.drawText(steering_angle[i],Qt::AlignCenter,str);
+    }
+    else {
+      painter.setBrush(comms_bad);
+      painter.drawRect(steering_angle[i]);
+      painter.drawText(steering_angle[i],Qt::AlignCenter, str);
+    }
+  }
+
+  // Steering front angle
+
+  painter.drawText(20,steering_front_top+10,"Front Steering ");
+
+  QRect steering_front;
+
+  steering_front.setTop(steering_front_top);
+  steering_front.setLeft(setleft[0]);
+  steering_front.setBottom(steering_front_bottom);
+  steering_front.setRight(setright[0]);
+
+  std::string c = std::to_string(car_num);
+  QString str = QString::fromStdString(c);
   if(alarm_status[0] == true){
     painter.setBrush(comms_ok);
-    painter.drawRect(bridge_1_ext);
-    painter.drawText(bridge_1_ext,Qt::AlignCenter,"1");
+    painter.drawRect(steering_front);
+    painter.drawText(steering_front,Qt::AlignCenter,str);
   }
   else {
     painter.setBrush(comms_bad);
-    painter.drawRect(bridge_1_ext);
-    painter.drawText(bridge_1_ext,Qt::AlignCenter,"1");
+    painter.drawRect(steering_front);
+    painter.drawText(steering_front,Qt::AlignCenter, str);
   }
 
-  if(alarm_status[1] == true){
+    // Steering rear angle
+
+  painter.drawText(20,steering_rear_top+10,"Rear Steering ");
+
+  QRect steering_rear;
+
+  steering_rear.setTop(steering_rear_top);
+  steering_rear.setLeft(setleft[0]);
+  steering_rear.setBottom(steering_rear_bottom);
+  steering_rear.setRight(setright[0]);
+
+  // std::string c = std::to_string(car_num);
+  // QString str = QString::fromStdString(c);
+  if(alarm_status[0] == true){
     painter.setBrush(comms_ok);
-    painter.drawRect(bridge_2_ext);
-    painter.drawText(bridge_2_ext,Qt::AlignCenter,"2");
+    painter.drawRect(steering_rear);
+    painter.drawText(steering_rear,Qt::AlignCenter,str);
   }
   else {
     painter.setBrush(comms_bad);
-    painter.drawRect(bridge_2_ext);
-    painter.drawText(bridge_2_ext,Qt::AlignCenter,"2");
-  }
-
-  if(alarm_status[2] == true){
-    painter.setBrush(comms_ok);
-    painter.drawRect(bridge_3_ext);
-    painter.drawText(bridge_3_ext,Qt::AlignCenter,"3");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(bridge_3_ext);
-    painter.drawText(bridge_3_ext,Qt::AlignCenter,"3");
-
-  }
-
-  if(alarm_status[3] == true){
-    painter.setBrush(comms_ok);
-    painter.drawRect(bridge_4_ext);
-    painter.drawText(bridge_4_ext,Qt::AlignCenter,"4");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(bridge_4_ext);
-    painter.drawText(bridge_4_ext,Qt::AlignCenter,"4");
-  }
-
-  if(alarm_status[4] == true){
-    painter.setBrush(comms_ok);
-    painter.drawRect(bridge_5_ext);
-    painter.drawText(bridge_5_ext,Qt::AlignCenter,"5");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(bridge_5_ext);
-    painter.drawText(bridge_5_ext,Qt::AlignCenter,"5");
-  }
-
-  if(alarm_status[5] == true){
-    painter.setBrush(comms_ok);
-    painter.drawRect(bridge_6_ext);
-    painter.drawText(bridge_6_ext,Qt::AlignCenter,"6");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(bridge_6_ext);
-    painter.drawText(bridge_6_ext,Qt::AlignCenter,"6");
+    painter.drawRect(steering_rear);
+    painter.drawText(steering_rear,Qt::AlignCenter, str);
   }
 
 
-  if(alarm_status[6] == true){
-    painter.setBrush(comms_ok);
-    painter.drawRect(bridge_7_ext);
-    painter.drawText(bridge_7_ext,Qt::AlignCenter,"7");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(bridge_7_ext);
-    painter.drawText(bridge_7_ext,Qt::AlignCenter,"7");
-  }
+  //Message Box - not used for now
 
-  if(alarm_status[7] == true){
-    painter.setBrush(comms_ok);
-    painter.drawRect(bridge_8_ext);
-    painter.drawText(bridge_8_ext,Qt::AlignCenter,"8");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(bridge_8_ext);
-    painter.drawText(bridge_8_ext,Qt::AlignCenter,"8");
-  }
-
-  if(alarm_status[8] == true){
-    painter.setBrush(comms_ok);
-    painter.drawRect(bridge_9_ext);
-    painter.drawText(bridge_9_ext,Qt::AlignCenter,"9");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(bridge_9_ext);
-    painter.drawText(bridge_9_ext,Qt::AlignCenter,"9");
-  }
-
-  if(alarm_status[9] == true){
-    painter.setBrush(comms_ok);
-    painter.drawRect(bridge_10_ext);
-    painter.drawText(bridge_10_ext,Qt::AlignCenter,"10");
-  }
-  else {
-    painter.setBrush(comms_bad);
-    painter.drawRect(bridge_10_ext);
-    painter.drawText(bridge_10_ext,Qt::AlignCenter,"10");
-  }
-
-
-  //Message Box
-  // textlabel->setFrameStyle(QFrame::Panel | QFrame::Sunken);
-  // textlabel->setWordWrap(true);
-  // textlabel->setLineWidth(3);
-  painter.drawText(20,160,"MESSAGES ");
-  painter.drawLine(10,170, 400,170);
+  painter.drawText(20,300,"MESSAGES ");
   QString temp_str = (" ");
-  if(alarm_status[0] == false){ temp_str.append("\nLeft Lidar 1 down"); }
-  if(alarm_status[1] == false){ temp_str.append("\nLeft Lidar 2 down"); }
-  if(alarm_status[2] == false){ temp_str.append("\nLeft Lidar 3 down"); }
-  if(alarm_status[3] == false){ temp_str.append("\nLeft Lidar 4 down"); }
-  if(alarm_status[4] == false){ temp_str.append("\nLeft Lidar 5 down"); }
-  if(alarm_status[5] == false){ temp_str.append("\nLeft Lidar 6 down"); }
-  if(alarm_status[6] == false){ temp_str.append("\nLeft Lidar 7 down"); }
-  if(alarm_status[7] == false){ temp_str.append("\nLeft Lidar 8 down"); }
-  if(alarm_status[8] == false){ temp_str.append("\nLeft Lidar 9 down"); }
-  if(alarm_status[9] == false){ temp_str.append("\nLeft Lidar 10 down"); }
-
+  temp_str.append("\nNo new notifications");
   textlabel->setText(temp_str);
-
-
-  // QScrollArea *scrollArea = new QScrollArea;
-  // scrollArea->setBackgroundRole(QPalette::Dark);
-  // scrollArea->setWidget(textlabel);
-
-
   textlabel->setAlignment(Qt::AlignBottom | Qt::AlignLeft);
+  textlabel->setGeometry(10,320, 350, 30);
   bottom_layout->addWidget( textlabel );
 
   update();
