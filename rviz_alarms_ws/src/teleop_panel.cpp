@@ -47,6 +47,7 @@
 #include <QAbstractButton>
 #include <QPaintEvent>
 #include <QString>
+#include <QScrollArea>
 
 #include <geometry_msgs/Twist.h>
 
@@ -64,16 +65,20 @@ extern bool alarm_status[10];
 QLabel *textlabel;
 
 
+
 TeleopPanel::TeleopPanel( QWidget* parent)
   : rviz::Panel( parent )
 {
 
   QHBoxLayout* topic_layout = new QHBoxLayout;
-  topic_layout->addWidget( new QLabel( "Left Lidars:" ));
+  // topic_layout->addWidget( new QLabel( "Left Lidars:" ));
 
   QHBoxLayout* radar_layout = new QHBoxLayout;
 
   QHBoxLayout* right_lidar_layout = new QHBoxLayout;
+
+  QHBoxLayout* extension_layout = new QHBoxLayout;
+
 
   QVBoxLayout* layout = new QVBoxLayout;
 
@@ -81,22 +86,40 @@ TeleopPanel::TeleopPanel( QWidget* parent)
   hline->setFrameStyle(QFrame::HLine | QFrame::Raised);
   hline->setLineWidth(2);
 
+  QLabel *hline2 = new QLabel(" ");
+  hline2->setFrameStyle(QFrame::HLine | QFrame::Raised);
+  hline2->setLineWidth(2);
 
   //Right Lidar Status
-  right_lidar_layout->addWidget( new QLabel( "Right Lidars:" ));
+  // right_lidar_layout->addWidget( new QLabel( "Right Lidars:" ));
 
   //RADAR Status
-  radar_layout->addWidget( new QLabel( "Radar Alarms:" ));
+  // radar_layout->addWidget( new QLabel( "Radar Alarms:" ));
+
+  //Extension
+  // extension_layout->addWidget( new QLabel( "Extension:\n" ));
+  // extension_layout->addWidget(hline2);
 
 
   ros_alarms_pub = nh_.advertise<std_msgs::Bool>("bool_value_topic", 1);
 
-  bottom_layout->addWidget( new QLabel( "Messages" ));
-  bottom_layout->addWidget(hline);
+  textlabel->setFrameStyle(QFrame::Panel | QFrame::Sunken);
+  textlabel->setWordWrap(true);
+  textlabel->setLineWidth(3);
+
+  // QScrollArea *scrollArea = new QScrollArea;
+  // scrollArea->setBackgroundRole(QPalette::Dark);
+  // scrollArea->setWidget(textlabel);
+
+  // bottom_layout->addWidget( new QLabel( "Messages" ));
+  // bottom_layout->addWidget(hline);
+  // bottom_layout->addWidget( scrollArea );
+
   
   layout->addLayout( topic_layout );
   layout->addLayout(right_lidar_layout);
   layout->addLayout( radar_layout );
+  layout->addLayout( extension_layout );
   layout->addLayout( bottom_layout );
   setLayout( layout );
 
@@ -107,6 +130,8 @@ TeleopPanel::TeleopPanel( QWidget* parent)
   connect( output_timer, SIGNAL( timeout() ), this, SLOT(  updateTopic() ));
   // Start the timer.
   output_timer->start( 100 );
+
+
   layout->update();
 }
 
@@ -143,6 +168,8 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
 
 
   //Left Lidars
+
+  painter.drawText(20,25,"Left Lidars");
 
   QRect lidar_1_left_rect;
   QRect lidar_2_left_rect;
@@ -316,6 +343,9 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
   }
 
   //Right Lidars
+
+  painter.drawText(20,55,"Right Lidars");
+
 
   QRect lidar_1_right_rect;
   QRect lidar_2_right_rect;
@@ -492,6 +522,9 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
 
 // Radars
 
+  painter.drawText(20,85,"Radars");
+
+
   QRect radar_1_rect;
   QRect radar_2_rect;
   QRect radar_3_rect;
@@ -664,10 +697,193 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
     painter.drawText(radar_10_rect,Qt::AlignCenter,"10");
   }
 
+
+
+
+  // Extension
+
+  painter.drawText(20,120,"Extension ");
+
+  QRect bridge_1_ext;
+  QRect bridge_2_ext;
+  QRect bridge_3_ext;
+  QRect bridge_4_ext;
+  QRect bridge_5_ext;
+  QRect bridge_6_ext;
+  QRect bridge_7_ext;
+  QRect bridge_8_ext;
+  QRect bridge_9_ext;
+  QRect bridge_10_ext;
+
+  bridge_1_ext.setTop(105);
+  bridge_1_ext.setLeft(108);
+  bridge_1_ext.setBottom(125);
+  bridge_1_ext.setRight(128);
+
+  bridge_2_ext.setTop(105);
+  bridge_2_ext.setLeft(135);
+  bridge_2_ext.setBottom(125);
+  bridge_2_ext.setRight(155);
+
+  bridge_3_ext.setTop(105);
+  bridge_3_ext.setLeft(160);
+  bridge_3_ext.setBottom(125);
+  bridge_3_ext.setRight(180);
+
+  bridge_4_ext.setTop(105);
+  bridge_4_ext.setLeft(185);
+  bridge_4_ext.setBottom(125);
+  bridge_4_ext.setRight(205);
+
+  bridge_5_ext.setTop(105);
+  bridge_5_ext.setLeft(212);
+  bridge_5_ext.setBottom(125);
+  bridge_5_ext.setRight(232); 
+
+  bridge_6_ext.setTop(105);
+  bridge_6_ext.setLeft(238);
+  bridge_6_ext.setBottom(125);
+  bridge_6_ext.setRight(258);  
+
+  bridge_7_ext.setTop(105);
+  bridge_7_ext.setLeft(265);
+  bridge_7_ext.setBottom(125);
+  bridge_7_ext.setRight(285); 
+
+  bridge_8_ext.setTop(105);
+  bridge_8_ext.setLeft(292);
+  bridge_8_ext.setBottom(125);
+  bridge_8_ext.setRight(312); 
+
+  bridge_9_ext.setTop(105);
+  bridge_9_ext.setLeft(319);
+  bridge_9_ext.setBottom(125);
+  bridge_9_ext.setRight(339); 
+
+  bridge_10_ext.setTop(105);
+  bridge_10_ext.setLeft(346);
+  bridge_10_ext.setBottom(125);
+  bridge_10_ext.setRight(366); 
+
+  if(alarm_status[0] == true){
+    painter.setBrush(comms_ok);
+    painter.drawRect(bridge_1_ext);
+    painter.drawText(bridge_1_ext,Qt::AlignCenter,"1");
+  }
+  else {
+    painter.setBrush(comms_bad);
+    painter.drawRect(bridge_1_ext);
+    painter.drawText(bridge_1_ext,Qt::AlignCenter,"1");
+  }
+
+  if(alarm_status[1] == true){
+    painter.setBrush(comms_ok);
+    painter.drawRect(bridge_2_ext);
+    painter.drawText(bridge_2_ext,Qt::AlignCenter,"2");
+  }
+  else {
+    painter.setBrush(comms_bad);
+    painter.drawRect(bridge_2_ext);
+    painter.drawText(bridge_2_ext,Qt::AlignCenter,"2");
+  }
+
+  if(alarm_status[2] == true){
+    painter.setBrush(comms_ok);
+    painter.drawRect(bridge_3_ext);
+    painter.drawText(bridge_3_ext,Qt::AlignCenter,"3");
+  }
+  else {
+    painter.setBrush(comms_bad);
+    painter.drawRect(bridge_3_ext);
+    painter.drawText(bridge_3_ext,Qt::AlignCenter,"3");
+
+  }
+
+  if(alarm_status[3] == true){
+    painter.setBrush(comms_ok);
+    painter.drawRect(bridge_4_ext);
+    painter.drawText(bridge_4_ext,Qt::AlignCenter,"4");
+  }
+  else {
+    painter.setBrush(comms_bad);
+    painter.drawRect(bridge_4_ext);
+    painter.drawText(bridge_4_ext,Qt::AlignCenter,"4");
+  }
+
+  if(alarm_status[4] == true){
+    painter.setBrush(comms_ok);
+    painter.drawRect(bridge_5_ext);
+    painter.drawText(bridge_5_ext,Qt::AlignCenter,"5");
+  }
+  else {
+    painter.setBrush(comms_bad);
+    painter.drawRect(bridge_5_ext);
+    painter.drawText(bridge_5_ext,Qt::AlignCenter,"5");
+  }
+
+  if(alarm_status[5] == true){
+    painter.setBrush(comms_ok);
+    painter.drawRect(bridge_6_ext);
+    painter.drawText(bridge_6_ext,Qt::AlignCenter,"6");
+  }
+  else {
+    painter.setBrush(comms_bad);
+    painter.drawRect(bridge_6_ext);
+    painter.drawText(bridge_6_ext,Qt::AlignCenter,"6");
+  }
+
+
+  if(alarm_status[6] == true){
+    painter.setBrush(comms_ok);
+    painter.drawRect(bridge_7_ext);
+    painter.drawText(bridge_7_ext,Qt::AlignCenter,"7");
+  }
+  else {
+    painter.setBrush(comms_bad);
+    painter.drawRect(bridge_7_ext);
+    painter.drawText(bridge_7_ext,Qt::AlignCenter,"7");
+  }
+
+  if(alarm_status[7] == true){
+    painter.setBrush(comms_ok);
+    painter.drawRect(bridge_8_ext);
+    painter.drawText(bridge_8_ext,Qt::AlignCenter,"8");
+  }
+  else {
+    painter.setBrush(comms_bad);
+    painter.drawRect(bridge_8_ext);
+    painter.drawText(bridge_8_ext,Qt::AlignCenter,"8");
+  }
+
+  if(alarm_status[8] == true){
+    painter.setBrush(comms_ok);
+    painter.drawRect(bridge_9_ext);
+    painter.drawText(bridge_9_ext,Qt::AlignCenter,"9");
+  }
+  else {
+    painter.setBrush(comms_bad);
+    painter.drawRect(bridge_9_ext);
+    painter.drawText(bridge_9_ext,Qt::AlignCenter,"9");
+  }
+
+  if(alarm_status[9] == true){
+    painter.setBrush(comms_ok);
+    painter.drawRect(bridge_10_ext);
+    painter.drawText(bridge_10_ext,Qt::AlignCenter,"10");
+  }
+  else {
+    painter.setBrush(comms_bad);
+    painter.drawRect(bridge_10_ext);
+    painter.drawText(bridge_10_ext,Qt::AlignCenter,"10");
+  }
+
+
   //Message Box
-  textlabel->setFrameStyle(QFrame::Panel | QFrame::Sunken);
-  textlabel->setWordWrap(true);
-  textlabel->setLineWidth(3);
+  // textlabel->setFrameStyle(QFrame::Panel | QFrame::Sunken);
+  // textlabel->setWordWrap(true);
+  // textlabel->setLineWidth(3);
+  painter.drawText(20,160,"MESSAGES ");
+  painter.drawLine(10,170, 400,170);
   QString temp_str = (" ");
   if(alarm_status[0] == false){ temp_str.append("\nLeft Lidar 1 down"); }
   if(alarm_status[1] == false){ temp_str.append("\nLeft Lidar 2 down"); }
@@ -682,13 +898,11 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
 
   textlabel->setText(temp_str);
 
-  // }
-  // else if(sub_flag == false){
-  //   textlabel->setText("Lidars non responsive");
-  // }
-  // else{
-  //   textlabel->setText("No error");
-  // }
+
+  // QScrollArea *scrollArea = new QScrollArea;
+  // scrollArea->setBackgroundRole(QPalette::Dark);
+  // scrollArea->setWidget(textlabel);
+
 
   textlabel->setAlignment(Qt::AlignBottom | Qt::AlignLeft);
   bottom_layout->addWidget( textlabel );

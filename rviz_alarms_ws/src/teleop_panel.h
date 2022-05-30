@@ -77,6 +77,7 @@ protected:
   QVBoxLayout* bottom_layout = new QVBoxLayout;
   QLabel *textlabel = new QLabel();
 
+
   void paintEvent(QPaintEvent *event);
 
   QString output_topic_;
