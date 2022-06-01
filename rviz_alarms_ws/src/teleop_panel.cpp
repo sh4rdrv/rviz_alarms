@@ -65,7 +65,7 @@ extern bool alarm_status[10];
 
 QLabel *textlabel;
 
-const int car_num = 7;
+const int car_num = 14;
 const int left_lidar_top = 10;
 const int left_lidar_bottom = 30;
 const int right_lidar_top = 35;
@@ -140,7 +140,6 @@ void TeleopPanel::updateTopic()
   alarms_sub = nh_.subscribe("/ros_alarms_topic", 1, &TeleopPanel::callbackAlarms,this);
 }
 
-// void TeleopPanel::callbackAlarms(const std_msgs::Bool::ConstPtr& msg)
 void TeleopPanel::callbackAlarms(const rviz_plugin_tutorials::alarm::ConstPtr& msg)
 {
   rviz_plugin_tutorials::alarm send_data = *msg;
@@ -232,7 +231,7 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
   }
 
 
-// Radars
+  // Radars
 
   painter.drawText(20,radar_top+10,"Radars");
 
@@ -292,7 +291,6 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
   // Intercar angle
 
   painter.drawText(20,intercar_angle_top+10,"Intercar Angle ");
-
 
   QRect intercar_angle[car_num];
 
@@ -382,8 +380,6 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
   steering_rear.setBottom(steering_rear_bottom);
   steering_rear.setRight(setright[0]);
 
-  // std::string c = std::to_string(car_num);
-  // QString str = QString::fromStdString(c);
   if(alarm_status[0] == true){
     painter.setBrush(comms_ok);
     painter.drawRect(steering_rear);
@@ -409,9 +405,6 @@ void TeleopPanel::paintEvent(QPaintEvent *event)
   update();
  
 }
-
-
-
 
 // Save all configuration data from this panel to the given
 // Config object.  It is important here that you call save()
